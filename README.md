@@ -5,7 +5,7 @@ We'll let you know when we deploy new exercises, you should then pull the change
 To do that, run this in your terminal:
 
 ```git
-git pull git@github.com:CodersInHoods/london-pt-fs-300121.git master
+git pull git@github.com:CodersInHoods/london-pt-fs-300121.git main
 ```
 
 or if you are using HTTPS:
