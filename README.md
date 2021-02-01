@@ -11,7 +11,7 @@ git pull git@github.com:CodersInHoods/london-pt-fs-300121.git master
 or if you are using HTTPS:
 
 ```git
-git pull https://github.com/CodersInHoods/london-pt-fs-300121.git master
+git pull https://github.com/CodersInHoods/london-pt-fs-300121.git main
 ```
 
 ## When you want to push your code
