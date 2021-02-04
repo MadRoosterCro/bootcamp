@@ -25,4 +25,4 @@ const convertToUpperCase = (LowerCase) => LowerCase.toUpperCase();
  * create a function 'getCharByIndex' that takes a string and a character position
  * as a params and return a character from your string that is in selected position
  */
-const getCharByIndex = (string, indexOf()) => return indexOf
+const getCharByIndex = (string, charIndex) => string[charIndex];
