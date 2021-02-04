@@ -23,6 +23,8 @@ git commit -m "YOUR COMMIT MESSAGE"
 git push
 ```
 
+###### ➡️ [Videos from lessons](https://www.youtube.com/playlist?list=PLsRodPBCrNtajAYZARMqd7yCWzBpE4ZjG) ⬅️
+
 ## Project repos
 
 [Module 1 - CLI APP](https://github.com/CodersInHoods/cli-project-london-300121)
@@ -53,7 +55,7 @@ git push
 9. Operators
 10. Comparisons and Conditionals Advanced
 
-### Week 2
+###### Week 2
 
 - [HTML/CSS part 1 examples](https://github.com/CodersInHoods/html-css-part-1-examples)
 - [HTML/CSS part 2 examples](https://github.com/CodersInHoods/html-css-part-2-examples)
@@ -62,7 +64,7 @@ git push
 11. Basic webpage
 12. Simple landing page
 
-### Week 3
+###### Week 3
 
 13. Create arrays
 14. Add to arrays
@@ -77,7 +79,7 @@ git push
 23. `for...of` loops
 24. DIY
 
-### Week 4
+###### Week 4
 
 25. Functions: default arguments
 26. Inline functions
