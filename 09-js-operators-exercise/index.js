@@ -6,7 +6,9 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function sum (x, y) {
+    return (x + y);
+}
 /**
  * Exercise #2
  *
@@ -16,7 +18,9 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function subtract (x, y) {
+    return (x - y);
+}
 /**
  * Exercise #3
  *
@@ -25,7 +29,9 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function multiply (x, y) {
+    return (x * y);
+}
 /**
  * Exercise #4
  *
@@ -35,7 +41,9 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function divide (x, y) {
+    return (x / y);
+}
 /**
  * Exercise #5
  *
@@ -45,7 +53,9 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function getRemainder (x, y) {
+    return (x % y);
+}
 /**
  * Exercise #6
  *
@@ -54,7 +64,9 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
-
+function increment (x) {
+    return (x + 1);
+}
 /**
  * Exercise #7
  *
@@ -63,3 +75,6 @@
  *
  * NOTE: additionally you can have console.log() to log the result
  */
+function decrement (x) {
+    return (x - 1);
+}
