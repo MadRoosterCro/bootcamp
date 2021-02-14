@@ -1,0 +1,61 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;;
+}
+.container {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .background {
+    width: 100%;
+    height: 100%;
+    background:url("./images/wave");
+    background-size: cover;
+  }
+  main nav .nav_list {
+    list-style: none;
+    padding: 1em 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav_list__item {
+    padding: 1em 0;
+    margin-left: 1em;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .nav_list__item::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    transition: 0.2s;
+  }
+  
+  .nav_list__item:hover::after {
+    width: 50%;
+  }
+  
+  .main_container section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .main_container section h2 {
+    font-size: 2.5em;
+    margin-top: 0;
+  }
+  
+  .main_container section h1 {
+    font-size: 4em;
+    margin: 0;
+  }
