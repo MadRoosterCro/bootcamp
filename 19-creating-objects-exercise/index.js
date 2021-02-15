@@ -7,6 +7,13 @@
  * PS: use console.log() to see the result
  */
 
+const user = {
+    firstName: `Dario`,
+    lastName: `Car`,
+    age: 30,
+}
+
+console.log(user);
 /**
  * Exercise 2
  *
@@ -15,6 +22,8 @@
  *
  * PS: use console.log() to see the result
  */
+
+
 
 /**
  * Exercise 3

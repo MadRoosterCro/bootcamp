@@ -3,6 +3,8 @@
  * and assign to it ["Mercedes", "Volvo", "BMW", "Citroen", "Reno", "Vauxhall"]
  */
 
+const carBrands = ["Mercedes", "Volvo", "BMW", "Citroen", "Reno", "Vauxhall"];
+
 /**
  * Exercise 1
  *
@@ -11,6 +13,8 @@
  * * PS: console.log() the result to see the difference
  */
 
+carBrands.splice(5, 1);
+console.log(carBrands);
 /**
  * Exercise 2
  *
@@ -18,6 +22,9 @@
  *
  * * PS: console.log() the result to see the difference
  */
+
+carBrands.splice(0, 1);
+console.log(carBrands);
 
 /**
  * Exercise 3
@@ -27,6 +34,9 @@
  * * PS: console.log() the result to see the difference
  */
 
+carBrands.splice(2, 1);
+console.log(carBrands);
+
 /**
  * Exercise 4
  *
@@ -34,3 +44,6 @@
  *
  * * PS: console.log() the result to see the difference
  */
+
+ carBrands.splice(2, 1, "Rolls-Royce");
+ console.log(carBrands);

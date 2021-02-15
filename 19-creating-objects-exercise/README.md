@@ -1,5 +1,6 @@
 # Creating Objects
 
+
 Objects are collections of key-value pairs.
 
 A key is used to access a value. In an array, the key is the index of the element, but in an object the key is a string that you define.
