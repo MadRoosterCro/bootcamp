@@ -195,3 +195,16 @@
   }
 
   /* Cute animals section */
+  
+  .animals h2,
+  .animals h3 {
+    text-align: center;
+  }
+  .kitten {
+    display: flex;
+  }
+  .animal_imgs {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
