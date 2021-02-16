@@ -13,7 +13,7 @@ const carBrands = ["Mercedes", "Volvo", "BMW", "Citroen", "Reno", "Vauxhall"];
  * * PS: console.log() the result to see the difference
  */
 
-carBrands.splice(5, 1);
+carBrands.pop();
 console.log(carBrands);
 /**
  * Exercise 2
@@ -23,7 +23,7 @@ console.log(carBrands);
  * * PS: console.log() the result to see the difference
  */
 
-carBrands.splice(0, 1);
+carBrands.shift();
 console.log(carBrands);
 
 /**
