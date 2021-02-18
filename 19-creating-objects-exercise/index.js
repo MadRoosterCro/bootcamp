@@ -22,8 +22,17 @@ console.log(user);
  *
  * PS: use console.log() to see the result
  */
-
-
+const allTypes = {
+    string: "Something",
+    number: 1,
+    array: [1, 2, 3, 4],
+    object: {
+        cityName: "London",
+        country: "UK"
+    },
+    function: (a, b) => (a +b),
+    boolean: true,
+}
 
 /**
  * Exercise 3
@@ -34,3 +43,11 @@ console.log(user);
  *
  * PS: use console.log() to see the result
  */
+const createMovieObject = (name, rating, ticketPrice) => { 
+    const movie = {
+        name: name,
+        rating: rating,
+        ticketPrice: ticketPrice
+    } 
+    return movie;
+}
