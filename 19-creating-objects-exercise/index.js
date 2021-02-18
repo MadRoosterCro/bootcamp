@@ -33,6 +33,7 @@ const allTypes = {
     function: (a, b) => (a +b),
     boolean: true,
 }
+console.log(allTypes);
 
 /**
  * Exercise 3
@@ -50,4 +51,5 @@ const createMovieObject = (name, rating, ticketPrice) => {
         ticketPrice: ticketPrice
     } 
     return movie;
-}
+} 
+console.log(createMovieObject("LOTR", 10, 5));
