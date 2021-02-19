@@ -1,6 +1,6 @@
-const myName = "John"; // SET YOUR NAME
+const myName = "Dario"; // SET YOUR NAME
 
-const visitors = ["Alex", "Mike", "Sam"]; // Add at least 5 names
+const visitors = ["Alex", "Mike", "Sam", "Vasile", "Tomas", "Atik"]; // Add at least 5 names
 
 /**
  * Exercise 1
@@ -9,7 +9,10 @@ const visitors = ["Alex", "Mike", "Sam"]; // Add at least 5 names
  * will greet all people from "visitors" for each person you should
  * console.log "Hi {name}, my name is {myName}!"
  */
-
+function greetVisitors(){
+    visitors.forEach(visitor => console.log(`Hi ${visitor} my name is ${myName}!`))
+}
+greetVisitors();
 // ========================
 const numbers = [2, 123, 13, 1, 6, 84, 23, 12, 45]; // DON'T TOUCH THIS LINE :)
 
@@ -19,7 +22,13 @@ const numbers = [2, 123, 13, 1, 6, 84, 23, 12, 45]; // DON'T TOUCH THIS LINE :)
  * given item in {numbers}.
  * If the item is not present, return a string "Item not found"
  */
-
+function getElementIndex (element) {
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] === element)
+        return i;
+    }
+    return "Item not found";
+}
 // ========================
 
 /**
@@ -29,7 +38,13 @@ const numbers = [2, 123, 13, 1, 6, 84, 23, 12, 45]; // DON'T TOUCH THIS LINE :)
  */
 
 // ========================
-
+function total () {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum;
+}
 const numbersForIndexes = [6, 2, 16, 23, 84, 21, 9, 3]; // DON'T TOUCH THIS LINE :)
 
 /**
