@@ -8,13 +8,13 @@ const user = {};
  *
  * add property "firstName" to "user" and assign any name
  */
-
+user.firstName = "Dario"
 /**
  * Exercise 2
  *
  * add property "lastName" to "user" and assign any last name
  */
-
+user.lastName = "Car"
 /**
  * Exercise 3
  * create a function "addANewProperty" which takes
@@ -22,3 +22,8 @@ const user = {};
  * and set a new property for 'user' object
  */
 
+const addANewProperty = (propertyName, propertyValue) => {
+    return user[propertyName] = propertyValue;
+}
+addANewProperty("city", "Zagreb");
+console.log(user);

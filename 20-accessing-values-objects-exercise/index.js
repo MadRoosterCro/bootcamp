@@ -28,7 +28,8 @@ const user = {
  *
  * PS: use console.log() to see the result
  */
-
+const userFirstName = user.firstName;
+console.log(userFirstName);
 /**
  * Exercise 2
  *
@@ -39,6 +40,9 @@ const user = {
  * PS: use console.log() to see the result
  */
 
+const favoriteMovie = user.favoriteMovies[0];
+console.log(favoriteMovie);
+
 /**
  * Exercise 3
  * create "userFullName" that equals to
@@ -47,6 +51,9 @@ const user = {
  *
  * PS: use console.log() to see the result
  */
+
+ const userFullName = (user.firstName + " " + user.lastName);
+ console.log(userFullName);
 
 /**
  * Exercise 4
@@ -57,6 +64,11 @@ const user = {
  * PS: use console.log() to see the result
  */
 
+ const getFullName = () => {
+   return userFullName;
+ }
+ console.log(getFullName);
+
 /**
  * Exercise 5
  *
@@ -65,6 +77,9 @@ const user = {
  *
  * PS: use console.log() to see the result
  */
+
+const mothersFirstName = user.parents.mother.firstName;
+console.log(mothersFirstName); 
 
 /**
  * Exercise 6
@@ -76,6 +91,17 @@ const user = {
  * PS: use console.log() to see the result
  */
 
+const getParentFullName = (input) => {
+  const motherFullName = (user.parents.mother.firstName + " " + user.parents.mother.lastName);
+  const fatherFullName = (user.parents.father.firstName + " " + user.parents.father.lastName);
+  if (input === "mother") {
+    return motherFullName;
+  } else if (input === "father") {
+    return fatherFullName;
+  }
+}
+console.log(getParentFullName("mother"));
+console.log(getParentFullName("father"));
 /**
  * Exercise 7
  *
@@ -84,3 +110,6 @@ const user = {
  *
  * * PS: use console.log() to see the result
  */
+
+ const getUserData = (key) => user[key];
+ console.log(getUserData("favoriteMovies"));
