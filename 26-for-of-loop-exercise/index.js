@@ -10,6 +10,17 @@
  * a new array with these integers. If there is no integers it should return
  * empty array.
  */
+const getIntegersOnly = (intArr) => {
+  let someArray = []
+  for (let int of intArr) {
+    let isAnInt = Number.isInteger(int);
+    if (isAnInt) {
+        someArray.push(int);
+    }
+    
+  }
+  return someArray;
+}
 
 /**
  * Exercise 2
