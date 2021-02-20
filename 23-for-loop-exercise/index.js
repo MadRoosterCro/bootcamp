@@ -52,6 +52,14 @@ const numbersForIndexes = [6, 2, 16, 23, 84, 21, 9, 3]; // DON'T TOUCH THIS LINE
  * Create a function {addIndex} that takes {numbersForIndexes} array,
  * and returns a new array which includes each number + it's index
  */
+function addIndex () {
+    let someArray = []
+        for (let j = 0; j < numbersForIndexes.length; j++) {
+            someArray[j] = numbersForIndexes[j] + j;    
+        }
+        return someArray;
+    }
+
 
 const forLowestNumber = [5, 234, 96, 34, -34, 0, 23]; // DON'T TOUCH THIS LINE :)
 /**
@@ -59,3 +67,11 @@ const forLowestNumber = [5, 234, 96, 34, -34, 0, 23]; // DON'T TOUCH THIS LINE :
  *  create function {lowestNumber} which will return the lowest integer
  * from {forLowestNumber}
  */
+function lowestNumber () {
+    let guess = forLowestNumber[0];
+    for (let k = 0; k < forLowestNumber.length; k++) {
+        if (guess > forLowestNumber[k])
+            guess = forLowestNumber[k];
+    }
+    return guess;
+}
