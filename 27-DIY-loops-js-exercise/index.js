@@ -38,35 +38,37 @@ const dataTypes = [
  * }
  */
 const sortedData = (dataTypes) => {
-  let types = {
+  let keys = {
     strings: [],
     integers: [],
-    folats: [],
+    floats: [],
     arrays: [],
     objects: [],
   };
-  for (data in dataTypes) {
+
+  for (let data in dataTypes) {
     let property = dataTypes[data];
     switch (true) {
       case typeof property === "string":
-        types.strings.push(property);
+        keys.strings.push(property);
         break;
       case typeof property === "number" && property % 1 === 0:
-        types.integers.push(property);
+        keys.integers.push(property);
         break;
       case typeof property === "number" && property % 1 !== 0:
-        types.floats.push(property);
+        keys.floats.push(property);
         break;
       case typeof property === "object" && Array.isArray(property):
-        types.arrays.push(property);
+        keys.arrays.push(property);
         break;
       case typeof property === "object" && Array.isArray(property) === false:
-        types.objects.push(property);
+        keys.objects.push(property);
         break;
     }
   }
-  return types;
-};
+  return keys;
+}
+
 /**
  * Exercise 2
  *
@@ -109,7 +111,7 @@ const multipliedByNextNumber = (arrOfNums) => {
  */
 
 const multipliedEvenNumbers = (passedArr) => {
-  const evenNums = passedArr.filter((num) => num % 2 === 0);
+  const evenNums = passedArr.filter(num => num % 2 === 0);
   const multipliedNums = evenNums.map((num, index) => {
     if (evenNums[index + 1] !== undefined) {
       return num * evenNums[index + 1];
@@ -117,7 +119,7 @@ const multipliedEvenNumbers = (passedArr) => {
       return num * 2;
     }
   });
-  let result = passedArr.map((num) => {
+  let result = passedArr.map(num => {
     if (num % 2) {
       return num;
     } else {
@@ -140,7 +142,7 @@ const multipliedEvenNumbers = (passedArr) => {
  * result: [4, 15, 6, 8, 35, 7]
  */
 
- const multipliedOddNumbers = (passedArr) => {
+const multipliedOddNumbers = (passedArr) => {
   const newArr = passedArr.filter(num => num % 2 !== 0);
   const multipliedNums = newArr.map((num, index) => {
     if (newArr[index + 1] !== undefined) {
@@ -155,9 +157,9 @@ const multipliedEvenNumbers = (passedArr) => {
     } else {
       return multipliedNums.shift();
     }
-  })
+  });
   return result;
- }
+};
 /**
  * Exercise 5
  *
@@ -168,3 +170,12 @@ const multipliedEvenNumbers = (passedArr) => {
  * if you pass "odd" do the same what you have for exercise 4
  * else return original array.
  */
+const multipliedEvenOddNumbers = (inputArr, type) => {
+  if (type === "odd") {
+    return multipliedOddNumbers(inputArr);
+  } else if (type === "even") {
+    return multipliedEvenNumbers(inputArr);
+  } else {
+    return inputArr;
+  }
+};
