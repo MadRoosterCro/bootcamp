@@ -38,7 +38,7 @@ const dataTypes = [
  * }
  */
 const sortedData = (dataTypes) => {
-  let keys = {
+  const keys = {
     strings: [],
     integers: [],
     floats: [],
