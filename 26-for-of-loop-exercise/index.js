@@ -29,6 +29,17 @@ const getIntegersOnly = (intArr) => {
  * integers it should return an empty array
  */
 
+const getEvenNumbers = (arrayOfInt) => {
+  let newArray = []
+  for (let number of arrayOfInt) {
+    if (number % 2 === 0 ) {
+      newArray.push(number);
+    }
+    
+  }
+  return newArray;
+}
+
 /**
  * Exercise 3
  *
@@ -38,12 +49,34 @@ const getIntegersOnly = (intArr) => {
  * should return an empty array
  */
 
+ const getEvenNumbersFromMixedArray = (arrayOfValues) => {
+  let newArray = [];
+  for (let value of arrayOfValues) {
+    let isAnInt = Number.isInteger(value)
+    if (isAnInt && value % 2 === 0) {
+      newArray.push(value);
+    }
+  }
+  return newArray;
+ }
+
 /**
  * Exercise 4
  * create a function {getOddNumbers}, which takes an array of integers
  * and returns a new array with odd numbers only, if there is no odd
  * integers it should return an empty array
  */
+
+const getOddNumbers = (arrayOfInt) => {
+  let newArr = [];
+  for (oddNum of arrayOfInt) {
+    let isAnInt = Number.isInteger (oddNum)
+    if (isAnInt && oddNum % 2 !== 0) {
+      newArr.push (oddNum);
+    }
+  }
+  return newArr;
+}
 
 /**
  * Exercise 5
@@ -54,3 +87,17 @@ const getIntegersOnly = (intArr) => {
  * If your param is [1,2,3,4,5] the result should be
  * [2,1,4,3,6]
  */
+
+ const evenOddTransform = (arrayOfInt) => {
+  let newArr = [];
+  for (let int of arrayOfInt) {
+    if (int % 2 === 0) {
+      int--;
+      newArr.push(int);
+    } else if (int % 2 !== 0) {
+      int++;
+      newArr.push(int);
+    }
+  }
+  return newArr;
+ }
