@@ -37,7 +37,36 @@ const dataTypes = [
  *  floats: [3.12]
  * }
  */
-
+const sortedData = (dataTypes) => {
+  let types = {
+    strings: [],
+    integers: [],
+    folats: [],
+    arrays: [],
+    objects: [],
+  };
+  for (data in dataTypes) {
+    let property = dataTypes[data];
+    switch (true) {
+      case typeof property === "string":
+        types.strings.push(property);
+        break;
+      case typeof property === "number" && property % 1 === 0:
+        types.integers.push(property);
+        break;
+      case typeof property === "number" && property % 1 !== 0:
+        types.floats.push(property);
+        break;
+      case typeof property === "object" && Array.isArray(property):
+        types.arrays.push(property);
+        break;
+      case typeof property === "object" && Array.isArray(property) === false:
+        types.objects.push(property);
+        break;
+    }
+  }
+  return types;
+};
 /**
  * Exercise 2
  *
@@ -49,6 +78,22 @@ const dataTypes = [
  * Ex: pass [3,2,6]
  * result: [6, 12, 6]
  */
+
+const multipliedByNextNumber = (arrOfNums) => {
+  let newArr = [];
+  for (i = 0; i < arrOfNums.length; i++) {
+    let value = arrOfNums[i];
+    let newValue = arrOfNums[i + 1];
+    if (i + 1 !== arrOfNums.length) {
+      value = value * newValue;
+      newArr.push(value);
+    } else if (i + 1 === arrOfNums.length) {
+      value = value * 1;
+      newArr.push(value);
+    }
+  }
+  return newArr;
+};
 
 /**
  * Exercise 3
@@ -63,6 +108,25 @@ const dataTypes = [
  * result: [24, 3, 48, 16, 5, 7]
  */
 
+const multipliedEvenNumbers = (passedArr) => {
+  const evenNums = passedArr.filter((num) => num % 2 === 0);
+  const multipliedNums = evenNums.map((num, index) => {
+    if (evenNums[index + 1] !== undefined) {
+      return num * evenNums[index + 1];
+    } else {
+      return num * 2;
+    }
+  });
+  let result = passedArr.map((num) => {
+    if (num % 2) {
+      return num;
+    } else {
+      return multipliedNums.shift();
+    }
+  });
+  return result;
+};
+
 /**
  * Exercise 4
  *
@@ -76,6 +140,24 @@ const dataTypes = [
  * result: [4, 15, 6, 8, 35, 7]
  */
 
+ const multipliedOddNumbers = (passedArr) => {
+  const newArr = passedArr.filter(num => num % 2 !== 0);
+  const multipliedNums = newArr.map((num, index) => {
+    if (newArr[index + 1] !== undefined) {
+      return num * newArr[index + 1];
+    } else {
+      return num * 1;
+    }
+  });
+  const result = passedArr.map(num => {
+    if (num % 2 === 0) {
+      return num;
+    } else {
+      return multipliedNums.shift();
+    }
+  })
+  return result;
+ }
 /**
  * Exercise 5
  *
