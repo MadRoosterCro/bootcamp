@@ -160,6 +160,7 @@ const multipliedOddNumbers = (passedArr) => {
   });
   return result;
 };
+
 /**
  * Exercise 5
  *
