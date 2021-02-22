@@ -31,12 +31,12 @@ const multiply = (x = 1, y = 1) => x * y;
  * array that contains only one element - string with value "Nothing to log"
  */
 
-const logElements = (array = [`Nothing to log`]) => {
+const logElements = (array = ["Nothing to log"]) => {
   for (let i = 0; i < array.length; i++) {
     console.log(array[i]);
   }
 };
-console.log(logElements([`a`, `b`, `c`, `d`]));
+console.log(logElements());
 
 /**
  * Exercise 4
