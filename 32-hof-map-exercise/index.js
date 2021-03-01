@@ -31,7 +31,7 @@ const convertToPositive = (numbers) => {
  *   {name: 'John', age: 25}
  * ]) will return ['Alex', 'John']
  */
-const getAllNames = (users) => {
+const getAllNames = users => {
     const userArr = users.map(user => user.name);
     return userArr;
 }
