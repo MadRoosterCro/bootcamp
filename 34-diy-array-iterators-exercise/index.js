@@ -15,7 +15,11 @@
  * passed each element and the index.
  *
  */
-
+const forEach = (array, callback) => {
+    for (let i=0; i<array.length; i++) {
+        callback(array[i], i)
+    }
+}
 /**
  * Exercise #2
  *
@@ -29,7 +33,14 @@
  * time the callback was invoked.
  *
  */
-
+const map = (array, callback) => {
+    let newArray = [];
+    for (let j=0; j<array.length; j++) {
+        let result = callback (array[j], j);
+        newArray.push(result);
+    }
+    return newArray;
+}
 /**
  * Exercise #3
  *
@@ -43,7 +54,16 @@
  * callback returned a truthy value.
  *
  */
-
+const filter = (array, callback) => {
+    let newArray = [];
+    for (let k=0; k<array.length; k++) {
+        let result = callback (array[k], k);
+        if(result === true) {
+            newArray.push(array[k]);
+        }
+    }
+    return newArray;
+}
 /**
  * Exercise #4
  *
@@ -57,6 +77,17 @@
  * truthy value.
  *
  */
+const find = (array, callback) => {
+    const newArray = [];
+    for (let l=0; l<array.length; l++) {
+        let result = callback(array[l], l);
+        if (result === true) {
+            newArray.push(array[l]);
+            break;
+        }
+    }
+    return newArray[0];
+}
 
 /**
  * Exercise #5
@@ -71,7 +102,17 @@
  * callback returns a truthy value.
  *
  */
-
+const findIndex = (array, callback) => {
+    let newArray = [];
+    for (let m=0; m<array.length; m++) {
+        let result = callback(array[m], m);
+        if (result === true) {
+            newArray.push(m);
+            break;
+        }
+    }
+    return newArray[0];
+}
 /**
  * Exercise #6
  *
@@ -86,6 +127,15 @@
  * a truthy value.
  *
  */
+const every = (array, callback) => {
+    for (let n=0; n<array.length; n++) {
+        let result = callback(array[n], n);
+        if(!result) {
+            return false;
+        }
+    }
+    return true;
+}
 
 /**
  * Exercise #7
@@ -101,7 +151,14 @@
  * a truthy value.
  *
  */
-
+const some = (array, callback) => {
+    for (let o=0; o<array.length; o++) {
+        let result = callback(array[o], o);
+        if (result) {
+            return true;
+        }
+    }
+}
 /**
  * Exercise #8
  *
@@ -123,3 +180,10 @@
  * value.
  *
  */
+const reduce = (array, callback, initialValue = 0) => {
+   let value = initialValue;
+    for (p=0; p<array.length; p++) {
+        value = callback(value, array[p], p);
+    }
+    return value;
+}
