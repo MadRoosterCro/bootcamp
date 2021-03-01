@@ -41,7 +41,10 @@ const getAllNames = users => {
  * create a function {greetAll} that takes array of names as a parameter
  * and return a new array of greetings "Hi, {name}!"
  */
-
+const greetAll = names => {
+    const newArr = names.map(name => `Hi, ${name}!`);
+    return newArr;
+}
 /**
  * Exercise 4
  *
