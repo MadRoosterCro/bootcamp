@@ -52,3 +52,13 @@ const greetAll = names => {
  * and multiply all numbers inside array by 5 and return the whole array
  * with multiplied numbers
  */
+const multiplyAllNumbers = array => {
+    const newArr = array.map(number => {
+        if (typeof number === "number") {
+            return number*5;
+        } else {
+            return number;
+        }
+    })
+    return newArr;
+}
