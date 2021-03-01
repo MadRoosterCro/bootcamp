@@ -9,7 +9,16 @@
  * array of numbers, convert all negatives to positives and return
  * a new array.
  */
-
+const convertToPositive = (numbers) => {
+    const newNumbers = numbers.map(numbers => {
+        if(numbers < 0) {
+            return numbers*(-1)
+        } else {
+            return numbers;
+        }
+    })
+    return newNumbers;
+} 
 /**
  * Exercise 2
  *
