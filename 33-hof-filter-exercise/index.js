@@ -4,7 +4,7 @@
  * create a function {noStrings} that takes an array
  * as a parameter and return an array but without strings
  */
-
+const noStrings = array => array.filter(item => typeof item !== "string"); 
 /**
  * Exercise 2
  *
