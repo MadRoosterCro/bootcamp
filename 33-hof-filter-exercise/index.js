@@ -12,7 +12,7 @@ const noStrings = array => array.filter(item => typeof item !== "string");
  * as a parameter and return an array of strings by removing
  * every other type
  */
-
+const justStrings = array => array.filter(item => typeof item === "string");
 /**
  * Exercise 3
  *
