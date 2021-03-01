@@ -1,11 +1,11 @@
 // install and  import "readline-sync" npm package before you do exercises
-
+const readlineSync = require(`readline-sync`);
 /**
  * Exercise 1
  *
  * ask user for a name and assign a response to variable {name}
  */
-
+name = readlineSync.question(`What is your name?`);
 //===== DO NOT TOUCH THIS BLOCK =====
 console.log(`Hi ${name}!`);
 console.log("=====================");
@@ -23,7 +23,16 @@ console.log("=====================");
  * NOTE: if the user will respond with wrong value, ask again, until
  * you get correct symbol
  */
-
+const selectSymbol = () => {
+  const symbol = readlineSync.question(`Please pick a symbol +, -, *, /`);
+  if (symbol === "+" || symbol === "-" || symbol === "*" || symbol === "/") {
+    return symbol;
+  } else {
+    console.log(`please pick a correct symbol`);
+    selectSymbol();
+  }
+};
+const selectedSymbol = selectSymbol();
 /**
  * Exercise 3
  *
@@ -32,7 +41,19 @@ console.log("=====================");
  * NOTE: if the user will respond with wrong value, ask again, until
  * you get a number
  */
-
+const pickANumber = (first) => {
+    const selectedNumber = parseInt(readlineSync.question(`Please pick a ${first} number: `));
+      
+    if(Number.isInteger(selectedNumber)) {
+      return selectedNumber;
+      
+    }
+    else {
+      console.log("Please enter a valid number")
+      pickANumber(first);
+    }
+  }
+  const number1 = pickANumber("first");
 /**
  * Exercise 4
  *
@@ -41,7 +62,7 @@ console.log("=====================");
  * NOTE: if the user will respond with wrong value, ask again, until
  * you get a number
  */
-
+const number2 = pickANumber("second");
 /**
  * Exercise 5
  *
@@ -50,6 +71,7 @@ console.log("=====================");
  *
  * show the result to the user
  */
+let result = eval(number1+selectedSymbol+number2);
 
 console.log("=====================");
 console.log(`Here you go, the result is ${result}`);
