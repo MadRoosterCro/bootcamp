@@ -69,7 +69,7 @@ const number2 = pickANumber("second");
  * take numbers that user provided to you and do math based on user
  * selected symbol.
  *
- * show the result to the user
+ * show the result to the 
  */
 let result = eval(number1+selectedSymbol+number2);
 
