@@ -27,7 +27,7 @@ git push
 
 ## Project repos
 
-[Module 1 - CLI APP](https://github.com/CodersInHoods/cli-project-london-300121)
+[Module 1 - CLI APP](https://github.com/CoderscdInHoods/cli-project-london-300121)
 [Module 2 - Ecommerce website](https://github.com/CodersInHoods/e-commerce-project-london-300121)
 
 ## Slides
