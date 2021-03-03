@@ -20,8 +20,8 @@ const firstParagraph = document.getElementsByTagName("p")[0];
  * ATTENTION: check the type of {paragraphs} before doing forEach
  */
 const logAllParagraphs = () => {
-    for (const listParam of listParams) {
-        
+    for (const listParagraph of listParagraphs) {
+        console.log(`this is a list of paragraphs`, listParagraph);
     }
 }
 /**
@@ -30,21 +30,21 @@ const logAllParagraphs = () => {
  * select all elements with class "text" with getElementsByClassName
  * and assign it to variable {textElements}
  */
-
+const textElements = document.getElementsByClassName("text");
 /**
  * Exercise 5
  *
  * select all elements that have classes "text" and "green"
  * with getElementsByClassName and assign it to variable {greenText}
  */
-
+const greenText = document.getElementsByClassName("green");
 /**
  * Exercise 6
  *
  * select element where id is 'textId-3'(use getElementById) and assign it
  * to variable {thirdText}
  */
-
+const thirdText = document.getElementById("textId-3");
 /* ==================================================== */
 /*                  querySelector section               */
 /* ==================================================== */
