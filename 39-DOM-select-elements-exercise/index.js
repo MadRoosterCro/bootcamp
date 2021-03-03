@@ -4,13 +4,13 @@
  * select p tags with getElementsByTagName and assign it
  * to variable {paragraphs}
  */
-
+const paragraphs = document.getElementsByTagName("p");
 /**
  * Exercise 2
  * select the first p tag with getElementsByTagName and assign it
  * to variable {firstParagraph}
  */
-
+const firstParagraph = document.getElementsByTagName("p")[0];
 /**
  * Exercise 3
  *
@@ -19,7 +19,11 @@
  *
  * ATTENTION: check the type of {paragraphs} before doing forEach
  */
-
+const logAllParagraphs = () => {
+    for (const listParam of listParams) {
+        
+    }
+}
 /**
  * Exercise 4
  *
