@@ -110,7 +110,7 @@ const menu = () => {
 		case `Movies`:
 			Movies();
 			break;
-		case 'Next Destination':
+		case `Next destination`:
 			Next_Destination();
 			break;
 		case undefined:
