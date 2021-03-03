@@ -100,8 +100,8 @@ const Next_Destination = () => {
  * When the user pick "Exit", log selected items.
  */
 const menu = () => {
-	const topMenu = [`Books`, 'Movies', 'Next Destination'];
-	const choice =readlineSync.keyInSelect(topMenu, 'Choose One: ',{cancel: 'EXIT'});
+	const topMenu = [`Books`, `Movies`, `Next destination`];
+	const choice =readlineSync.keyInSelect(topMenu, `Pick one: `,{cancel: `Exit`});
 
 	switch(topMenu[choice]) {
 		case 'Books':
