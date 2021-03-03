@@ -104,10 +104,10 @@ const menu = () => {
 	const choice =readlineSync.keyInSelect(topMenu, `Pick one: `,{cancel: `Exit`});
 
 	switch(topMenu[choice]) {
-		case 'Books':
+		case `Books`:
 			Books();
 			break;
-		case 'Movies':
+		case `Movies`:
 			Movies();
 			break;
 		case 'Next Destination':
