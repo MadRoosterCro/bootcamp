@@ -55,26 +55,26 @@ const thirdText = document.getElementById("textId-3");
  *
  * select the fourth "li" element and save it to {fourthListElement} variable
  */
-
+const fourthListElement = document.querySelector("#test-4");
 /**
  * Exercise 8
  *
  * select all "li" elements and save it to {listElements} variable
  */
-
+const listElements = document.querySelectorAll("li");
 /**
  * Exercise 9
  *
  * select all "a" elements that are inside "ul" and assign it {listLinks}
  */
-
+const listLinks = document.querySelectorAll("ul > a");
 /**
  * Exercise 10
  *
  * select elements where the "data-community-name" attribute
  * is "codersinhoods" and assign it {communityElements}
  */
-
+const communityElements = document.querySelectorAll("[data-community-name=codersinhoods]" )
 /**
  * Exercise 11
  *
