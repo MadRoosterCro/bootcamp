@@ -81,6 +81,7 @@ const communityElements = document.querySelectorAll("[data-community-name=coders
  * select all elements with class "test" and assign it to a variable
  * {elementsForTesting}
  */
+const elementsForTesting = document.querySelectorAll("test");
 
 /**
  * Exercise 12
@@ -88,10 +89,11 @@ const communityElements = document.querySelectorAll("[data-community-name=coders
  * select the element with id "test-5" and assign it to a variable
  * {fifthTest}
  */
-
+const fifthTest = document.querySelector("#test-5")
 /**
  * Exercise 13
  *
  * select all the elements which are siblings of an element
  * with the class "links" and assign it to a variable {nextElements}
  */
+const nextElements = document.querySelectorAll("div ~ links");
