@@ -20,9 +20,8 @@ const firstParagraph = document.getElementsByTagName("p")[0];
  * ATTENTION: check the type of {paragraphs} before doing forEach
  */
 const logAllParagraphs = () => {
-    for (const listParagraph of listParagraphs) {
-        console.log(`this is a list of paragraphs`, listParagraph);
-    }
+    const checkParagraphs = [...paragraphs];
+    checkParagraphs.forEach(p => console.log(p));   
 }
 /**
  * Exercise 4
@@ -81,7 +80,7 @@ const communityElements = document.querySelectorAll("[data-community-name=coders
  * select all elements with class "test" and assign it to a variable
  * {elementsForTesting}
  */
-const elementsForTesting = document.querySelectorAll("test");
+const elementsForTesting = document.querySelectorAll(".test");
 
 /**
  * Exercise 12
