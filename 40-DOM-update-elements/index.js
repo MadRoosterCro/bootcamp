@@ -8,7 +8,7 @@
  * create a function {setTitle} which takes a string as an argument
  * and displays it in the h1
  */
-
+const setTitle = title => document.querySelector(`h1`).innerText = title; 
 /**
  * Exercise 2
  * create a function {appendToTitle} which takes a string as an argument
