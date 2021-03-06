@@ -78,6 +78,12 @@ const setTitle = title => document.querySelector(`h1`).innerText = title;
  * NOTE: We've added some CSS so when your classes are added,
  * you will see a difference
  */
+const addClassToLi = () => {
+    const listItems = document.querySelectorAll('.list li');
+    listItems.forEach((listItem, i) => {
+        listItem.classList.add(`list_item_${i}`);
+    });
+};
 
 /**
  * Exercise 11
