@@ -10,7 +10,19 @@ let counter = 0;
  *
  * NOTE: ".counter_value" should always represent the current value of {counter}
  */
+const action = (symbol) => {
+  const counterVal = document.querySelector(".counter_value");
 
+  if (symbol === "+") {
+    counter = counter + step;
+    counterVal.innerText = parseInt(counter);
+    return counter;
+  } else if (symbol === "-") {
+    counter = counter - step;
+    counterVal.innerText = parseInt(counter);
+    return counter;
+  }
+};
 /**
  * Exercise 2
  *
@@ -22,7 +34,14 @@ let counter = 0;
  * NOTE: {step} should be an integer
  *
  */
-
+const setButton = document.querySelector(".step_form");
+let stepInput = document.querySelector(".step_form input");
+setButton.addEventListener("submit", (event) => {
+  event.preventDefault();
+  step = parseInt(stepInput.value);
+  document.querySelector(".inc .step_value").innerText = step;
+  stepInput.value = 1;
+});
 /**
  * Exercise 3
  *
@@ -31,7 +50,10 @@ let counter = 0;
  *
  * NOTE: remember to use your {action} function
  */
-
+const decrementButton = document.querySelector("#decrement");
+decrementButton.addEventListener("click", () => {
+  action("-");
+});
 /**
  * Exercise 4
  *
@@ -40,7 +62,10 @@ let counter = 0;
  *
  * NOTE: remember to use your {action} function
  */
-
+const incrementButton = document.querySelector("#increment");
+incrementButton.addEventListener("click", () => {
+  action("+");
+});
 /**
  * Exercise 5
  *
@@ -58,6 +83,7 @@ let counter = 0;
  *
  * NOTE: ".counter_value" should represent current state of counter
  */
+
 
 /**
  * Exercise 7
