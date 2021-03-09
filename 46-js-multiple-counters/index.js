@@ -58,6 +58,3 @@ addCounterEl.addEventListener("click", () => {
     timersContainerEl.appendChild(newTimer);
   }
 });
-
-//
-// const createTimerEl = (number) => {
