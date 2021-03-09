@@ -75,6 +75,16 @@ incrementButton.addEventListener("click", () => {
  * NOTE: ".counter_value" should represent current state of counter
  */
 
+/// if decrement is clicked, it needs to stop increment first
+const autoDecrement = document.querySelector("#auto_decrement");
+let intervalID;
+
+autoDecrement.addEventListener("click", () => {
+  clearInterval(intervalID);
+  intervalID = setInterval(() => {
+    action("-");
+  }, 1000);
+});
 /**
  * Exercise 6
  *
@@ -84,10 +94,20 @@ incrementButton.addEventListener("click", () => {
  * NOTE: ".counter_value" should represent current state of counter
  */
 
-
+const autoIncrement = document.querySelector("#auto_increment");
+autoIncrement.addEventListener("click", () => {
+    clearInterval(intervalID);
+    intervalID = setInterval(() => {
+      action("+");
+    }, 1000);
+  });
 /**
  * Exercise 7
  *
  * when the user clicks on "#stop_auto",
  * the auto counter should stop
  */
+const stopButton = document.querySelector("#stop_auto");
+stopButton.addEventListener("click", () => {
+  clearInterval(intervalID);
+});
