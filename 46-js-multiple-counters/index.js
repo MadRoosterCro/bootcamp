@@ -46,5 +46,9 @@ removeButton.addEventListener("click", () => {
     divForTimer.remove();
 });
 resetButton.addEventListener("click", () => counter = 0);
+stopButton.addEventListener("click", () => {
+    clearInterval(timerInterval);
+    return divForTimer;
+});
 
 }
