@@ -41,4 +41,10 @@ const timerInterval = setInterval(() => {
     counter++; 
 }, 10);
 
+removeButton.addEventListener("click", () => {
+    clearInterval(timerInterval);
+    divForTimer.remove();
+});
+resetButton.addEventListener("click", () => counter = 0);
+
 }
