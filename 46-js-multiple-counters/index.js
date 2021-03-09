@@ -34,4 +34,11 @@ const timerSpan = divForTimer.querySelector(`.h3`);
 const resetButton = divForTimer.querySelector(`.reset`);
 const stopButton = divForTimer.querySelector(`.stop`);
 
+const timerInterval = setInterval(() => {
+    const seconds = Math.floor(countr/100);
+    const milliseconds = counter % 100;
+    timerSpan.innerHTML = `${seconds}<span>${milliseconds}</span>`;
+    counter++; 
+}, 10);
+
 }
