@@ -14,10 +14,10 @@ let timersCount = 0;
  * NOTE: each timer should have additional class with unique number(as you
  * can see in example - timer_$)
  */
-
+/// first I need to create a timer 
 const createTimerEl = (number) => {
   const divForTimer = document.createElement("div");
-  let cunter = 0;
+  let counter = 0;
   divForTimer.classList.add(`timer`, `timer_${number}`);
   divForTimer.innerHTML = `
   <div class = "remove"></div>
@@ -50,5 +50,12 @@ stopButton.addEventListener("click", () => {
     clearInterval(timerInterval);
     return divForTimer;
 });
-
+addCounterEl.addEventListener("click", () => {
+    const numberOfTimersAdded = document.querySelectorAll(".timer").length
+    if (numberOfTimersAdded < 5) {
+        timersCount++;
+        const newTimer = createTimerEl(timersCount);
+        timersContainerEl.appendChild(newTimer);
+    }
+})
 }
