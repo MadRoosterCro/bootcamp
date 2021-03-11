@@ -29,3 +29,21 @@ commentButton.addEventListener("click", () => {
     newComment.classList.toggle("hide");
 })
 
+/// adding new comments to the picture
+
+let commentId = 0;
+const user = "Mad_Rooster";
+let userComment = "This is an amazing bike!";
+const addComment = () => {
+    const commentContent = document.querySelector(`textarea`).value;
+    const structure = document.createElement(`div`);
+    structure.id = commentId++;
+    commentId = parseInt(structure.id);
+    structure.classList.add("comment");
+    structure.innerHTML = `
+    <em>
+    <h3>${user}</h3>
+    <p>${commentContent}</p>
+    </em>`;
+    return structure;
+}
