@@ -1,4 +1,4 @@
-/// firstly I need to tackle like button
+// firstly I need to tackle like button
 
 const liked = () => {
   const likedPicture = document.querySelector(`.like_button>img`);
@@ -21,14 +21,14 @@ likeButton.addEventListener(`click`, () => {
   liked();
 });
 
-/// comment button section
+// comment button section
 const commentButton = document.querySelector(`.comment_button`);
 const newComment = document.querySelector(`.newComment`);
 commentButton.addEventListener(`click`, () => {
   newComment.classList.toggle(`hide`);
 });
 
-/// adding new comments to the picture
+// adding new comments to the picture
 
 let commentId = 0;
 const user = `Mad_Rooster`;
@@ -47,19 +47,19 @@ const addComment = () => {
   return structure;
 };
 
-/// submitting or canceling comments
+// submitting or canceling comments
 
 const submitButton = document.querySelector(`.submit`);
 const commentWrapper = document.querySelector(`.comment_wrapper`);
-submitButton.addEventListener(`click`, event => {
-    event.preventDefault();
-    const commentNew = addComment();
-    commentWrapper.appendChild(commentNew);
-    document.querySelector(`textarea`).value = ``;
-    newComment.classList.toggle(`hide`);
+submitButton.addEventListener(`click`, (event) => {
+  event.preventDefault();
+  const commentNew = addComment();
+  commentWrapper.appendChild(commentNew);
+  document.querySelector(`textarea`).value = ``;
+  newComment.classList.toggle(`hide`);
 });
 const cancelButton = document.querySelector(`.cancel`);
-cancelButton.addEventListener(`click`, event => {
-    event.preventDefault();
-    newComment.classList.toggle(`hide`);
-})
+cancelButton.addEventListener(`click`, (event) => {
+  event.preventDefault();
+  newComment.classList.toggle(`hide`);
+});
