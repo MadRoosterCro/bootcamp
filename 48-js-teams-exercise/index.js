@@ -55,3 +55,65 @@ let players = {
  *  </div>
  * </li>
  */
+
+ const playerslist = players.pool;
+ const team1 =players.team1;
+ const team2 =players.team2;
+ const poolSection = document.querySelector('.column.pool');
+//                                             MAKE LIST IN POOL 
+ const createPlayerEl = () =>{
+   playerslist.forEach((playerName,index) => {
+     const playerChoice = document.createElement('li');
+     playerChoice.classList.add('player');
+     playerChoice.innerHTML = `<p>${playerName}</p>
+       <div class="buttons" id="${index}">
+       <button class="btn to_team1"> < </button>
+       <button class="btn to_team2"> > </button>
+       </div>`;
+     poolSection.appendChild(playerChoice);
+   })
+   return poolSection;
+ }
+
+ createPlayerEl();
+
+ const createTeamMember = (player,teamToGoInto) => {
+   // team1.forEach(player => {
+     console.log('teamToGoInto',teamToGoInto)
+     const playerWrap = document.createElement('li');
+     playerWrap.innerHTML = `<p>${player}</p>`;
+     teamToGoInto.appendChild(playerWrap);
+   // })
+ }
+   //                                          BUTTON FUNCTIONS 
+
+ const goToTeam1Btn = [...document.querySelectorAll('li')];
+
+ goToTeam1Btn.forEach(player =>{player.addEventListener("click", (event)=>{
+   const ptag = player.querySelector('p').innerText;
+   player.remove();
+   indexOfPlayer = playerslist.indexOf(ptag);
+   console.log(indexOfPlayer);
+
+   playerRemoved = playerslist.splice(indexOfPlayer,1);
+   console.log(playerRemoved);
+
+   
+   const team1Roster = document.querySelector('.column.team1');
+   const team2Roster = document.querySelector('.column.team2');
+
+   
+   let btnClasses = event.target.className
+
+   if (btnClasses.includes('to_team1')){
+     team1.push(playerRemoved[0]);
+     createTeamMember(playerRemoved[0],team1Roster);
+
+  
+   } else if(btnClasses.includes('to_team2')){
+     team2.push(playerRemoved[0]);
+     createTeamMember(playerRemoved[0],team2Roster);
+   }
+ })
+});
+
