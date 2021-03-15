@@ -4,3 +4,13 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+body {
+    font-family: roboto;
+    max-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: white;
+}
