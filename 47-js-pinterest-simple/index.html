@@ -4,39 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
-    <title>Coolest bike site</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Best bike site</title>
   </head>
   <body>
+
     <div class="post">
+      
       <div class="img_wrapper">
-        <img src="../47-js-pinterest-simple/img/basso_venta.png" alt="best_bike" />
+        <img src="../47-js-pinterest-simple/img/basso_venta.png" alt="" />
       </div>
-      <div class="activites">
+      <div class="activities">
         <ul>
           <style>li {cursor: pointer;}</style>
-          <li class="like_button">
-            <img class="disliked" src="../47-js-pinterest-simple/img/like_empty.png" alt="disliked"></img>
-          </li>
-            <li class="comment_button">
-              <img src="../47-js-pinterest-simple/img/comment_empty.png" alt="no_comment">
-            </li>
+          <li class="likeButton"><img class="disliked" src="./img/like_empty.png" alt=""></li>
+          <li class="commentButton"><img src="./img/comment_empty.png" alt=""></li>
         </ul>
+        
+
       </div>
-      <div class="comment_part">
+      <div class="commentsPart">
+      
+      
         <p>Comments</p>
         <div class="newComment hide">
           <form action="">
-            <textarea name="comment" id="" cols="20" rows="5" placeholder="Type a comment"></textarea>
+           <textarea name="comment" id="" cols="30" rows="5" placeholder="Type what is on your mind"></textarea>
             <div class="buttons">
-              <button class="cancel">Cancel</button>
-              <button class="submit" type="">Submit</button>
+            <button class="cancel">Cancel</button>
+            <button class="submit" type="">Submit</button>
             </div>
-          </form>
+          </form> 
         </div>
-        <div class="comment_wrapper">
-
-        </div>
+        <div class="commentWraper">
+      
       </div>
+      
+     
     </div>
   </body>
   <script src="index.js"></script>

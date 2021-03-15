@@ -1,65 +1,67 @@
-// firstly I need to tackle like button
-
+//first the like button
 const liked = () => {
-  const likedPicture = document.querySelector(`.like_button>img`);
+  const likeImg = document.querySelector(".likeButton>img");
+
   const like = () => {
-    likedPicture.src = `../47-js-pinterest-simple/img/like_full.png`;
-    likedPicture.className = `liked;`;
+    likeImg.src = "./img/like_full.png";
+    likeImg.className = "liked";
   };
   const dislike = () => {
-    likedPicture.src = "../47-js-pinterest-simple/img/like_empty.png";
-    likedPicture.className = `disliked`;
+    likeImg.src = "./img/like_empty.png";
+    likeImg.className = "disliked";
   };
-  if (likedPicture.classList.contains(`disliked`)) {
+
+  if (likeImg.classList.contains("disliked")) {
     like();
-  } else if (likedPicture.classList.contains(`liked`)) {
+  } else if (likeImg.classList.contains("liked")) {
     dislike();
   }
 };
-const likeButton = document.querySelector(`.like_button`);
-likeButton.addEventListener(`click`, () => {
+
+const likeButton = document.querySelector(".likeButton");
+likeButton.addEventListener("click", () => {
   liked();
 });
 
-// comment button section
-const commentButton = document.querySelector(`.comment_button`);
-const commentNew = document.querySelector(`.newComment`);
-commentButton.addEventListener(`click`, () => {
-  commentNew.classList.toggle(`hide`);
+//comment button
+
+const commentButton = document.querySelector(".commentButton");
+const commentNew = document.querySelector(".newComment");
+commentButton.addEventListener("click", () => {
+  commentNew.classList.toggle("hide");
 });
 
-// adding new comments to the picture
+//adding comments
 
-let commentId = 0;
-const user = `Mad_Rooster`;
-let userComment = `This is an amazing bike!`;
+let commentId;
+const userName = "Mad_Rooster";
+
 const addComment = () => {
-  const commentContent = document.querySelector(`textarea`).value;
-  const structure = document.createElement(`div`);
-  structure.id = commentId++;
-  commentId = parseInt(structure.id);
-  structure.classList.add(`comment`);
-  structure.innerHTML = `
-    <em>
-    <h3>${user}</h3>
-    <p>${commentContent}</p>
-    </em>`;
-  return structure;
+  const commentContent = document.querySelector("textarea").value;
+  const commentStructure = document.createElement("div");
+  commentStructure.id = commentId + 1;
+  commentId = parseInt(commentStructure.id);
+  commentStructure.classList.add("comment");
+  commentStructure.innerHTML = `<i>
+  <h4>${userName}</h4>
+  <p>${commentContent}</p>
+  </i>`;
+  return commentStructure;
 };
 
-// posting or canceling comments
-
-const submitButton = document.querySelector(`.submit`);
-const commentWrapper = document.querySelector(`.comment_wrapper`);
-submitButton.addEventListener(`click`, (event) => {
+// submit and cancel buttons
+const submitButton = document.querySelector(".submit");
+const commentsWrapper = document.querySelector(".commentWraper");
+submitButton.addEventListener("click", (event) => {
   event.preventDefault();
   const newComment = addComment();
-  commentWrapper.appendChild(newComment);
-  document.querySelector(`textarea`).value = ``;
-  commentNew.classList.toggle(`hide`);
+  commentsWrapper.appendChild(newComment);
+  document.querySelector("textarea").value = "";
+  commentNew.classList.toggle("hide");
 });
-const cancelButton = document.querySelector(`.cancel`);
-cancelButton.addEventListener(`click`, (event) => {
+
+const cancelButton = document.querySelector(".cancel");
+cancelButton.addEventListener("click", (event) => {
   event.preventDefault();
-  commentNew.classList.toggle(`hide`);
+  commentNew.classList.toggle("hide");
 });
