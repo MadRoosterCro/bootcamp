@@ -3,11 +3,11 @@
 const liked = () => {
   const likedPicture = document.querySelector(`.like_button>img`);
   const like = () => {
-    likedPicture.src = `.img/like_full.png`;
+    likedPicture.src = `../47-js-pinterest-simple/img/like_full.png`;
     likedPicture.className = `liked;`;
   };
   const dislike = () => {
-    likedPicture.src = `./img/like_empty.png`;
+    likedPicture.src = "../47-js-pinterest-simple/img/like_empty.png";
     likedPicture.className = `disliked`;
   };
   if (likedPicture.classList.contains(`liked`)) {
@@ -23,9 +23,9 @@ likeButton.addEventListener(`click`, () => {
 
 // comment button section
 const commentButton = document.querySelector(`.comment_button`);
-const newComment = document.querySelector(`.newComment`);
+const commentNew = document.querySelector(`.newComment`);
 commentButton.addEventListener(`click`, () => {
-  newComment.classList.toggle(`hide`);
+  commentNew.classList.toggle(`hide`);
 });
 
 // adding new comments to the picture
