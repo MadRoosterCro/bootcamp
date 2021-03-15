@@ -31,5 +31,51 @@ body {
 }
 .post .img_wrapper img {
     max-width: 100%;
-    border-radius: 2rem;
+    border-radius: 1rem;
+}
+.post .activities {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0 1rem;
+}
+.post .activities ul {
+    position: relative;
+    display: flex;
+    padding: 1rem;
+    list-style: none;
+}
+.post .activities ul li {
+    padding-right: 1rem;
+}
+.post .comment_part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 0 auto;
+
+    border-top: thistle 3px solid;
+}
+.post .comment_part p {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem 0;
+    color: grey;
+}
+
+.hide {
+    display: none;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+form textarea {
+    border: thistle solid 3px;
+    border-radius: 1rem;
+    padding: 1rem;
+    resize: none;
 }
