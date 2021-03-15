@@ -47,19 +47,19 @@ const addComment = () => {
   return structure;
 };
 
-// submitting or canceling comments
+// posting or canceling comments
 
 const submitButton = document.querySelector(`.submit`);
 const commentWrapper = document.querySelector(`.comment_wrapper`);
 submitButton.addEventListener(`click`, (event) => {
   event.preventDefault();
-  const commentNew = addComment();
-  commentWrapper.appendChild(commentNew);
+  const newComment = addComment();
+  commentWrapper.appendChild(newComment);
   document.querySelector(`textarea`).value = ``;
-  newComment.classList.toggle(`hide`);
+  commentNew.classList.toggle(`hide`);
 });
 const cancelButton = document.querySelector(`.cancel`);
 cancelButton.addEventListener(`click`, (event) => {
   event.preventDefault();
-  newComment.classList.toggle(`hide`);
+  commentNew.classList.toggle(`hide`);
 });
