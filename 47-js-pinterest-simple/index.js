@@ -10,10 +10,10 @@ const liked = () => {
     likedPicture.src = "../47-js-pinterest-simple/img/like_empty.png";
     likedPicture.className = `disliked`;
   };
-  if (likedPicture.classList.contains(`liked`)) {
-    dislike();
-  } else if (likedPicture.classList.contains(`disliked`)) {
+  if (likedPicture.classList.contains(`disliked`)) {
     like();
+  } else if (likedPicture.classList.contains(`liked`)) {
+    dislike();
   }
 };
 const likeButton = document.querySelector(`.like_button`);
