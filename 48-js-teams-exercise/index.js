@@ -57,8 +57,8 @@ let players = {
  */
 
  const playerslist = players.pool;
- const team1 =players.team1;
- const team2 =players.team2;
+ const team1 = players.team1;
+ const team2 = players.team2;
  const poolSection = document.querySelector('.column.pool');
 //                                             MAKE LIST IN POOL 
  const createPlayerEl = () =>{
@@ -85,7 +85,7 @@ let players = {
      teamToGoInto.appendChild(playerWrap);
    // })
  }
-   //                                          BUTTON FUNCTIONS 
+/// buttons 
 
  const goToTeam1Btn = [...document.querySelectorAll('li')];
 
@@ -116,4 +116,3 @@ let players = {
    }
  })
 });
-
