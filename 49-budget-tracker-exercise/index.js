@@ -38,4 +38,6 @@ const getSum = () => {
   return sum;
 };
 
-
+const fundsString = documet.getElementById("remaining").querySelector("span");
+const number = fundsString.innerText.match(/\d+/g);
+let budget = number[0];
