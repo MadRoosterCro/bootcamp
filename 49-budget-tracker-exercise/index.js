@@ -23,4 +23,19 @@ produtcs.forEach((product) => {
   productsContainer.appendChild(divForProducts);
 });
 
+/// calculate the total cost of products
+
+const allProducts = [...document.querySelectorAll(".product")];
+const getSum = () => {
+  let sum = 0;
+  allProducts.forEach((product, i) => {
+    const productIndex = document.getElementById([i + 1]);
+    const productQuantity = productIndex.querySelector("select").value;
+    const productPrice = productIndex.querySelector("p").innerText;
+    cost = productPrice * productQuantity;
+    sum += cost;
+  });
+  return sum;
+};
+
 
