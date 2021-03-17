@@ -18,16 +18,18 @@ const rot13 = (string, lettersForInput, lettersForOutput) => {
 
 const encryptButton = document.getElementById("encrypt");
 const result = document.querySelector(".result");
-const input = document.querySelector("textarea");
+
 
 encryptButton.addEventListener("click", () => {
-    result.innerText = rot13(input.value, alphabet, alphabetCipher)
+    const input = document.querySelector("textarea").value;
+    result.innerText = rot13(input, alphabet, alphabetCipher)
 } )
 
 const decryptButton = document.getElementById("decrypt");
 
 decryptButton.addEventListener("click", () => {
-    result.innerText = rot13(input.value, alphabetCipher, alphabet);
+    const input = document.querySelector("textarea").value;
+    result.innerText = rot13(input, alphabetCipher, alphabet);
 })
 
 // const rot13 = (str) => {
