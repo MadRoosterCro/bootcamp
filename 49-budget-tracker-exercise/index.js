@@ -41,3 +41,8 @@ const getSum = () => {
 let fundsString = documet.getElementById("remaining").querySelector("span");
 const number = fundsString.innerText.match(/\d+/g);
 let budget = number[0];
+const tooPoor = documet.createElement("div");
+tooPoor.innerHTML = `You are too poor to buy all that stuff`;
+tooPoor.classList.add("error");
+const remaining = docume.getElementById("remaining");
+
