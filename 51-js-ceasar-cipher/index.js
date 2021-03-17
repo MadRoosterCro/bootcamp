@@ -19,6 +19,13 @@ const rot13 = (string, lettersForInput, lettersForOutput) => {
 const encryptButton = document.getElementById("encrypt");
 const result = document.querySelector(".result");
 const input = document.querySelector("textarea");
+
 encryptButton.addEventListener("click", () => {
-    result.innerText = rot13()
+    result.innerText = rot13(input.value, alphabet, alphabetCipher)
 } )
+
+cosnt decryptButton = document.getElementById("decrypt");
+
+decryptButton.addEventListener("click", () => {
+    result.innerText = rot13(input.value, alphabetCipher, alphabetC);
+})
