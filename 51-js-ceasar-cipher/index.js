@@ -1,5 +1,5 @@
-const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-const alphabetCipher = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm"
+const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!£$%^&*()_+";
+const alphabetCipher = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm1234567890!£$%^&*()_+";
 
 const rot13 = (string, lettersForInput, lettersForOutput) => {
     let someString = "";
@@ -7,12 +7,12 @@ const rot13 = (string, lettersForInput, lettersForOutput) => {
         let stringIndex = lettersForInput.indexOf(string[i]);
         let alphabetValue = lettersForOutput[stringIndex];
         if (alphabetValue === undefined) {
-            someString += "";
+            someString += " ";
         } else {
             someString += alphabetValue;
         }
     }
-    someString = string(someString);
+    someString = String(someString);
     return someString;
 }
 
@@ -24,8 +24,40 @@ encryptButton.addEventListener("click", () => {
     result.innerText = rot13(input.value, alphabet, alphabetCipher)
 } )
 
-cosnt decryptButton = document.getElementById("decrypt");
+const decryptButton = document.getElementById("decrypt");
 
 decryptButton.addEventListener("click", () => {
-    result.innerText = rot13(input.value, alphabetCipher, alphabetC);
+    result.innerText = rot13(input.value, alphabetCipher, alphabet);
 })
+
+// const rot13 = (str) => {
+//   const re = new RegExp("[a-z]", "i");
+//   const min = "A".charCodeAt(0);
+//   const max = "Z".charCodeAt(0);
+//   const factor = 13;
+//   let result = "";
+//   str = str.toUpperCase();
+
+//   for (let i = 0; i < str.length; i++) {
+//     result += re.test(str[i])
+//       ? String.fromCharCode(
+//           ((str.charCodeAt(i) - min + factor) % (max - min + 1)) + min
+//         )
+//       : str[i];
+//   }
+
+//   return result;
+// }
+
+// const encryptButton = document.getElementById("encrypt");
+// const decryptButton = document.getElementById("decrypt");
+// const result = document.querySelector(".result");
+// const input = document.querySelector("textarea");
+
+// encryptButton.addEventListener("click", () => {
+//   result.innerText = rot13();
+// });
+
+// decryptButton.addEventListener("click", () => {
+//   result.innerText = rot13();
+// });
