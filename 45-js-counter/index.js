@@ -34,14 +34,15 @@ const action = (symbol) => {
  * NOTE: {step} should be an integer
  *
  */
-const setButton = document.querySelector(".step_form");
+const stepButton = document.querySelector("form");
 let stepInput = document.querySelector(".step_form input");
-setButton.addEventListener("submit", (event) => {
+stepButton.addEventListener("submit", (event) => {
   event.preventDefault();
   step = parseInt(stepInput.value);
   document.querySelector(".inc .step_value").innerText = step;
   stepInput.value = 1;
 });
+
 /**
  * Exercise 3
  *
