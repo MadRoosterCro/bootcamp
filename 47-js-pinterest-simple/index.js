@@ -49,7 +49,7 @@ const addComment = () => {
   return commentStructure;
 };
 
-// submit and cancel buttons
+// submit and cancel buttons part
 const submitButton = document.querySelector(".submit");
 const commentsWrapper = document.querySelector(".commentWraper");
 submitButton.addEventListener("click", (event) => {
