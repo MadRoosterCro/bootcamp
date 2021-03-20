@@ -60,7 +60,7 @@ function rulerConstructor() {
 /**
  * Exercise 4
  * create a function {partyPadding} which takes an array of names
- * of guests at a party. If there are less than 5 guests, add
+ * ofguests at a party. If there are less than 5 guests, add
  * "Neighbour" to the array until you have at least 5 guests.
  * Without using an if statement!
  */
