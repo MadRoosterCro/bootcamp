@@ -31,7 +31,7 @@ commentButton.addEventListener("click", () => {
   commentNew.classList.toggle("hide");
 });
 
-//adding comments
+//adding comments part
 
 let commentId;
 const userName = "Mad_Rooster";
