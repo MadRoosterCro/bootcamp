@@ -23,7 +23,7 @@ likeButton.addEventListener("click", () => {
   liked();
 });
 
-//comment button
+//comment button part
 
 const commentButton = document.querySelector(".commentButton");
 const commentNew = document.querySelector(".newComment");
