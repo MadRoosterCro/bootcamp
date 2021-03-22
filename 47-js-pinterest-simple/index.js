@@ -1,4 +1,4 @@
-//first the like button part
+//first the like button part 
 const liked = () => {
   const likeImg = document.querySelector(".likeButton>img");
 
