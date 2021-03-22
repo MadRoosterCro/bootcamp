@@ -34,6 +34,7 @@ const action = (symbol) => {
  * NOTE: {step} should be an integer
  *
  */
+
 const stepButton = document.querySelector("form");
 let stepInput = document.querySelector(".step_form input");
 stepButton.addEventListener("submit", (event) => {
@@ -51,10 +52,12 @@ stepButton.addEventListener("submit", (event) => {
  *
  * NOTE: remember to use your {action} function
  */
+
 const decrementButton = document.querySelector("#decrement");
 decrementButton.addEventListener("click", () => {
   action("-");
 });
+
 /**
  * Exercise 4
  *
@@ -63,10 +66,12 @@ decrementButton.addEventListener("click", () => {
  *
  * NOTE: remember to use your {action} function
  */
+
 const incrementButton = document.querySelector("#increment");
 incrementButton.addEventListener("click", () => {
   action("+");
 });
+
 /**
  * Exercise 5
  *
@@ -77,6 +82,7 @@ incrementButton.addEventListener("click", () => {
  */
 
 /// if decrement is clicked, it needs to stop increment first
+
 const autoDecrement = document.querySelector("#auto_decrement");
 let intervalID;
 
@@ -86,6 +92,7 @@ autoDecrement.addEventListener("click", () => {
     action("-");
   }, 1000);
 });
+
 /**
  * Exercise 6
  *
@@ -97,17 +104,19 @@ autoDecrement.addEventListener("click", () => {
 
 const autoIncrement = document.querySelector("#auto_increment");
 autoIncrement.addEventListener("click", () => {
-    clearInterval(intervalID);
-    intervalID = setInterval(() => {
-      action("+");
-    }, 1000);
-  });
+  clearInterval(intervalID);
+  intervalID = setInterval(() => {
+    action("+");
+  }, 1000);
+});
+
 /**
  * Exercise 7
  *
  * when the user clicks on "#stop_auto",
  * the auto counter should stop
  */
+
 const stopButton = document.querySelector("#stop_auto");
 stopButton.addEventListener("click", () => {
   clearInterval(intervalID);
