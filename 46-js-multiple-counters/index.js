@@ -10,6 +10,7 @@ let timersCount = 0;
  * create a function {createTimerEl} which takes a number
  * and creates a div which matches the HTML structure you can find
  * in the README
+ * 
  *
  * NOTE: each timer should have additional class with unique number(as you
  * can see in example - timer_$)
