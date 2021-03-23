@@ -9,7 +9,9 @@
  *
  * NOTE: we will use this function for other exercises.
  */
+
 const createDOMElement = (tagName) => document.createElement(tagName);
+
 /**
  * Exercise 2
  *
@@ -17,12 +19,14 @@ const createDOMElement = (tagName) => document.createElement(tagName);
  * create a "p" tag which displays the text and appends it to
  * the body of the document
  */
-const addPTag = (text) => {
+
+const addPTag = text => {
   const body = document.querySelector("body");
   const pTag = createDOMElement("p");
   pTag.innerText = text;
   body.appendChild(pTag);
 };
+
 /**
  * Exercise 3
  *
@@ -31,6 +35,7 @@ const addPTag = (text) => {
  * which displays the text and has the class and appends
  * the element to the body
  */
+
 const addElementWithClass = (tag_name, text, class_name) => {
   const body = document.querySelector("body");
   const newTag = createDOMElement(tag_name);
@@ -38,6 +43,7 @@ const addElementWithClass = (tag_name, text, class_name) => {
   newTag.innerText = text;
   body.appendChild(newTag);
 };
+
 /**
  * Exercise 4
  *
@@ -45,6 +51,7 @@ const addElementWithClass = (tag_name, text, class_name) => {
  * text and an array of classes. Create an element which displays the
  * text, has the array of classes and append it to the body
  */
+
 const addElementWithMultipleClasses = (tag_name, text, classes) => {
   const body = document.querySelector("body");
   const newTag = createDOMElement(tag_name);
@@ -53,6 +60,7 @@ const addElementWithMultipleClasses = (tag_name, text, classes) => {
   newTag.innerText = text;
   body.appendChild(newTag);
 };
+
 /**
  * Exercise 5
  *
@@ -64,6 +72,7 @@ const addElementWithMultipleClasses = (tag_name, text, classes) => {
  * Each li should have the text "Item $" (where $ is it's position)
  * Add the list element to the body
  */
+
 const buildAList = (listType, classOfEl, numberOfEl) => {
   const body = document.querySelector("body");
   const newList = document.createElement(listType);
@@ -78,6 +87,7 @@ const buildAList = (listType, classOfEl, numberOfEl) => {
 
   body.appendChild(newList);
 };
+
 /**
  * Exercise 6
  * !!! to test this function in your browser, first run {buildAList} !!!
@@ -91,6 +101,7 @@ const buildAList = (listType, classOfEl, numberOfEl) => {
  * FIRST item in the list.
  *
  */
+
 const prependLiToList = (text, someClass) => {
   const list = document.querySelector(".list");
   const listItem = createDOMElement("li");
@@ -99,6 +110,7 @@ const prependLiToList = (text, someClass) => {
 
   list.prepend(listItem);
 };
+
 /**
  * Exercise 7
  * !!! to test this function in your browser, first run {buildAList} !!!
@@ -111,6 +123,7 @@ const prependLiToList = (text, someClass) => {
  * Add the li into the list at the position passed to this function.
  *
  */
+
 const pushToSelectedPosition = (text, someClass, position) => {
   let list = document.querySelector(".list");
   const listItem = createDOMElement("li");
@@ -120,6 +133,7 @@ const pushToSelectedPosition = (text, someClass, position) => {
   someArr.splice(position, 0, listItem);
   someArr.forEach((Element) => list.appendChild(Element));
 };
+
 /**
  * Exercise 8
  *
@@ -130,6 +144,7 @@ const pushToSelectedPosition = (text, someClass, position) => {
  * element which match the element selector
  *
  */
+
 const deleteSelectedElements = (parent, childRemoved) => {
   parentList = document.querySelector(parent);
   const children = parentList.querySelectorAll(childRemoved);
