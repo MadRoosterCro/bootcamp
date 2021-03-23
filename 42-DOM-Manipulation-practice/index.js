@@ -8,6 +8,7 @@
  * 3. you should add only 5 list items.
  * 4. list item text should be "Item $"($ - position in the list)
  */
+
 const createAList = () => {
   const body = document.querySelector("body");
   const newList = document.createElement("ul");
@@ -23,6 +24,7 @@ const createAList = () => {
 
   body.appendChild(newList);
 };
+
 /**
  * Exercise 2
  *
@@ -34,12 +36,14 @@ const createAList = () => {
  * 3. set color to "white"
  * 4. set font size to 2em
  */
+
 const styleElement = () => {
   const third = document.querySelector(".myList li:nth-child(3)");
   third.style.backgroundColor = "green";
   third.style.color = "white";
   third.style.fontSize = "2em";
 };
+
 /**
  * Exercise 3
  *
@@ -48,11 +52,13 @@ const styleElement = () => {
  * 1. select last element from the ".myList"
  * 2. wait 2 seconds and remove the element from the list
  */
+
 const removeLastChild = () => {
   setTimeout(() => {
     document.querySelector(".myList li:last-child").remove();
   }, 2000);
 };
+
 /**
  * Exercise 4
  *
@@ -69,6 +75,7 @@ const removeLastChild = () => {
  * NOTE: check css file to see how we toggle styles
  * based on class "visible"
  */
+
 const createAMessage = text => {
   const body = document.querySelector("body");
   const pTag = document.createElement("p");
