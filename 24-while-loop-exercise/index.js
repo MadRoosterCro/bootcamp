@@ -37,7 +37,9 @@ function countdownWithParam(x) {
 }
 
 // ==========================
+
 let ruler = [];
+
 /**
  * Exercise 3
  * create a function {rulerConstructor} and by using while loop
@@ -55,6 +57,7 @@ function rulerConstructor() {
   }
   return ruler;
 }
+
 // ==========================
 
 /**
@@ -64,6 +67,7 @@ function rulerConstructor() {
  * "Neighbour" to the array until you have at least 5 guests.
  * Without using an if statement!
  */
+
 function partyPadding(guestList) {
   let j = guestList.length;
   while (j < 5) {
