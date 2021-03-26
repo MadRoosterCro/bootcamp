@@ -23,6 +23,7 @@ const isEqual = (num1, num2) => {
  * create an arrow function {isLessOrEqual0} which takes number as a param
  * and return true if it equals or less than 0 or false if not
  */
+
 const isLessOrEqual0 = (num) => {
   if (num <= 0) {
     return true;
@@ -30,6 +31,7 @@ const isLessOrEqual0 = (num) => {
     return false;
   }
 };
+
 /**
  * Exercise 3
  *
@@ -40,7 +42,9 @@ const isLessOrEqual0 = (num) => {
  * Don't forget to set default values for your params, 0 and 0
  * so you will not break your function if you forget to pass params
  */
+
 const timeToSeconds = (hours = 0, minutes = 0) => (hours * 3600) + (minutes * 60);
+
 /**
  * Exercise 4
  *
@@ -49,6 +53,7 @@ const timeToSeconds = (hours = 0, minutes = 0) => (hours * 3600) + (minutes * 60
  * pay. If probability * prize is more than
  * pay then return true otherwise return false
  */
+
 const isGameWorthTheCandle = (probability, prize, pay) => {
     if (probability * prize > pay) {
         return true;
@@ -56,6 +61,7 @@ const isGameWorthTheCandle = (probability, prize, pay) => {
         return false;
     }
 }
+
 /**
  * Exercise 5
  *
