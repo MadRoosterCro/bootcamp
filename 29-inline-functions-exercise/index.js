@@ -10,6 +10,7 @@
  * use default value "[]", is you pass any other type than array
  * return a string "Please, pass correct type".
  */
+
 const reverseArray = function (array = []) {
   if (Array.isArray(array)) {
     return array.reverse();
@@ -17,12 +18,14 @@ const reverseArray = function (array = []) {
     return `Please, pass correct type`;
   }
 };
+
 /**
  * Exercise 2
  *
  * create an inline function {nextOddNum} that takes number as a param
  * and return next odd number.
  */
+
 const nextOddNum = function (num) {
   if (num % 2 === 0) {
     return num + 1;
@@ -31,6 +34,7 @@ const nextOddNum = function (num) {
   }
 };
 console.log(nextOddNum(4));
+
 /**
  * Exercise 3
  *
@@ -39,6 +43,7 @@ console.log(nextOddNum(4));
  * Given two numbers, return true if the sum of both numbers is
  * less than 100. Otherwise return false.
  */
+
 const isLessThan100 = function (num1, num2) {
   if (num1 + num2 < 100) {
     return true;
@@ -47,6 +52,7 @@ const isLessThan100 = function (num1, num2) {
   }
 };
 console.log(isLessThan100(50, 439));
+
 /**
  * Exercise 4
  * create an inline function {incrementBy5} which takes
@@ -64,6 +70,7 @@ const incrementBy5 = function (num) {
  * Then apply incrementor function to each element in your array and
  * return the result
  */
+
 const incrementAllBy5 = function (arr, incrementBy5) {
   let newArr = [];
   newArr = arr.map(incrementBy5);
