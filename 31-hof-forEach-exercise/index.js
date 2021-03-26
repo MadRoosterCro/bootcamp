@@ -24,7 +24,8 @@
  * create a function {logAllWithExternalCallback} that will take an array
  * and with forEach log every element from your array
  * use {forEachCallback} as a callback function for forEach
- */
+*/
+
 const forEachCallback = (param) => console.log(param);
 
 const logAllWithExternalCallback = (array) => {
@@ -43,7 +44,8 @@ const logAllWithExternalCallback = (array) => {
 
 const logAllWithAnonymousCallback = (array) =>
   array.forEach((parameter) => console.log(parameter));
-/**
+
+  /**
  * Exercise 2
  *
  * module 3
@@ -55,6 +57,7 @@ const logAllWithAnonymousCallback = (array) =>
  *
  * Ex: dividableBy3([3,7,9,11]) => return [3,9]
  */
+
 const dividableBy3 = arr => {
   let newArr = [];
   arr.forEach((parameter) => {
@@ -72,6 +75,7 @@ const dividableBy3 = arr => {
  *
  * Use forEach to loop through the array.
  */
+
 const oddNumbersSum = arrOfNums => {
     const newArr = [];
     const operation = (item, value) => item + value;
@@ -82,6 +86,7 @@ const oddNumbersSum = arrOfNums => {
     });
     return newArr.reduce(operation);  
 }
+
 /**
  * Exercise 4
  * create an arrow function {totalLength} which takes an array
