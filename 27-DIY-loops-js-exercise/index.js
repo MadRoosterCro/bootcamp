@@ -37,6 +37,7 @@ const dataTypes = [
  *  floats: [3.12]
  * }
  */
+
 const sortedData = (dataTypes) => {
   const keys = {
     strings: [],
@@ -171,6 +172,7 @@ const multipliedOddNumbers = (passedArr) => {
  * if you pass "odd" do the same what you have for exercise 4
  * else return original array.
  */
+
 const multipliedEvenOddNumbers = (inputArr, type) => {
   if (type === "odd") {
     return multipliedOddNumbers(inputArr);
