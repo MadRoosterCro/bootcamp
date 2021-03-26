@@ -6,11 +6,13 @@
  * param it should use default value for name which
  * should be 'incognito'
  */
+
 const sayHi = (name = "incognito") => {
   return `Hi, ${name}!`;
 };
 console.log(sayHi(`Marko`));
 console.log(sayHi());
+
 /**
  * Exercise 2
  *
