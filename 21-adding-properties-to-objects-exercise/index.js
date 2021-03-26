@@ -1,6 +1,8 @@
 // **** DO NOT TOUCH THIS CODE ****
 // ============================
+
 const user = {};
+
 // ============================
 
 /**
@@ -8,7 +10,9 @@ const user = {};
  *
  * add property "firstName" to "user" and assign any name
  */
+
 user.firstName = "Dario"
+
 /**
  * Exercise 2
  *
