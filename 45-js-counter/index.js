@@ -10,6 +10,7 @@ let counter = 0;
  *
  * NOTE: ".counter_value" should always represent the current value of {counter}
  */
+
 const action = (symbol) => {
   const counterVal = document.querySelector(".counter_value");
 
@@ -23,6 +24,7 @@ const action = (symbol) => {
     return counter;
   }
 };
+
 /**
  * Exercise 2
  *
