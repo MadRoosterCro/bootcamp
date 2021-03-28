@@ -1,4 +1,5 @@
 //first the like button part 
+
 const liked = () => {
   const likeImg = document.querySelector(".likeButton>img");
 
@@ -50,6 +51,7 @@ const addComment = () => {
 };
 
 // submit and cancel buttons part
+
 const submitButton = document.querySelector(".submit");
 const commentsWrapper = document.querySelector(".commentWraper");
 submitButton.addEventListener("click", (event) => {
