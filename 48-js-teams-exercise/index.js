@@ -60,7 +60,9 @@ let players = {
  const team1 = players.team1;
  const team2 = players.team2;
  const poolSection = document.querySelector('.column.pool');
-//                                             MAKE LIST IN POOL 
+
+
+
  const createPlayerEl = () =>{
    playerslist.forEach((playerName,index) => {
      const playerChoice = document.createElement('li');
@@ -85,6 +87,7 @@ let players = {
      teamToGoInto.appendChild(playerWrap);
    // })
  }
+ 
 /// buttons 
 
  const goToTeam1Btn = [...document.querySelectorAll('li')];

@@ -1,12 +1,8 @@
 const {
-	fireEvent
-} = require("@testing-library/dom/dist/@testing-library/dom.umd.js");
-
-const {
-	fireEvent
+  fireEvent,
 } = require("@testing-library/dom/dist/@testing-library/dom.umd.js");
 
 // Exercise #
 describe("", () => {
-	test("", () => {});
+  test("", () => {});
 });

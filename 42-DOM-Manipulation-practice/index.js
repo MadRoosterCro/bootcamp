@@ -10,6 +10,7 @@
  */
 
 const createAList = () => {
+<<<<<<< HEAD
   const body = document.querySelector("body");
   const newList = document.createElement("ul");
   newList.classList.add("list");
@@ -23,6 +24,21 @@ const createAList = () => {
   }
 
   body.appendChild(newList);
+=======
+  const ulEl = document.createElement("ul");
+  ulEl.className = "list";
+  document.body.appendChild(ulEl);
+
+  for (let index = 1; index <= 5; index++) {
+    const liEl = document.createElement("li");
+    liEl.innerText = `Item ${index}`;
+
+    setTimeout(() => {
+      console.log("setTimeout");
+      ulEl.appendChild(liEl);
+    }, 1000 * index);
+  }
+>>>>>>> 6984abb9bb75afa45896e87b28b248676b3e0635
 };
 
 /**

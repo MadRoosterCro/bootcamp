@@ -128,7 +128,7 @@ describe("fourthListElement", () => {
   });
 });
 
-// Exercise 8
+// Exercise 9
 describe("listElements", () => {
   test("listElements should be declared", () => {
     expect(Boolean(listElements)).toBe(true);
@@ -153,7 +153,7 @@ describe("listElements", () => {
   });
 });
 
-// Exercise 9
+// Exercise 10
 describe("communityElements", () => {
   test("communityElements should be declared", () => {
     expect(Boolean(communityElements)).toBe(true);
@@ -178,7 +178,7 @@ describe("communityElements", () => {
   });
 });
 
-// Exercise 10
+// Exercise 11
 describe("elementsForTesting", () => {
   test("elementsForTesting should be declared", () => {
     expect(Boolean(elementsForTesting)).toBe(true);
@@ -203,7 +203,7 @@ describe("elementsForTesting", () => {
   });
 });
 
-// Exercise 11
+// Exercise 12
 describe("fifthTest", () => {
   test("fifthTest should be declared", () => {
     expect(Boolean(fifthTest)).toBe(true);
@@ -218,7 +218,7 @@ describe("fifthTest", () => {
   });
 });
 
-// Exercise 12
+// Exercise 13
 describe("nextElements", () => {
   test("nextElements should be declared", () => {
     expect(Boolean(nextElements)).toBe(true);

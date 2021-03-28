@@ -29,6 +29,7 @@ git push
 
 [Module 1 - CLI APP](https://github.com/CoderscdInHoods/cli-project-london-300121)
 [Module 2 - Ecommerce website](https://github.com/CodersInHoods/e-commerce-project-london-300121)
+[Module 3 - Twitter App](https://github.com/CodersInHoods/twitter-project-london-300121)
 
 ## Slides
 
@@ -48,6 +49,14 @@ git push
 - [M2W3L2 - Sorting, Filtering, More Project Features](https://docs.google.com/presentation/d/1V6ouaPUnqy6IZKHKuQrtpN1q-PFA1jD7Wpn8cK5qN-U/edit?usp=sharing)
 - [M2W4L1 - CSS Grid](https://docs.google.com/presentation/d/1i9EBV5p5HdNRmoQnbKs5-KvBLxLQB7oO35i8-wx40D4/edit?usp=sharing)
 - [M2W4L2 - Sass](https://github.com/CodersInHoods/sass-lesson)
+- [M3W1L1 - Async Javascript](https://docs.google.com/presentation/d/1sPh0IP1wBIFS3DEVNPdgXpohx8MBzqxPu0P__B7w9zo/edit?usp=sharing)
+- [M3W1L2 - More fetching](https://docs.google.com/presentation/d/1KWAhGImMoWEj_pxnLjAfI-SwZqnEwzR_cSOf_G0I008/edit?usp=sharing)
+- [M3W2L1 - Advance JS usage](https://docs.google.com/presentation/d/1rRmTgoUjwIqliRZd2qjhFIUQWATqGSMwLRZ0zPSbwCE/edit?usp=sharing)
+- [M3W2L2 - Code-along](https://docs.google.com/presentation/d/1dBO8Kcc0G7JChmDgPsrYv2Ne__jj4ZXVQg_-2F26Oy4/edit?usp=sharing)
+- [M3W3L1 - Object Oriented Programming](https://docs.google.com/presentation/d/1iI_D2ezLQLly0Mpozr_GaWyM-k0oRoKBLEq8neBkEXk/edit?usp=sharing)
+- [M3W3L2 - OOP and TypeScript](https://docs.google.com/presentation/d/1eBlTCIaY-M6w5g42dJ1oTKJPZmrJLUHkn4lxaQ-wFic/edit?usp=sharing)
+- [M3W4L1 - Testing in JS](https://docs.google.com/presentation/d/1i_OSOdEy4yw6U5Se7f09EfFXHZzWr_NYq-n2pc5dq5s/edit?usp=sharing)
+- [M3W4L2 - JS Code along](https://docs.google.com/presentation/d/1NCwDuwKlhQeyLdyzs8RxE29bljEsXmAIG2DVNlz2_eE/edit?usp=sharing)
 
 ## Exercises/Examples/Read
 
@@ -132,3 +141,31 @@ git push
 
 53. Sass examples
 54. variables and functions
+
+##### Module 3
+
+###### Week 1
+
+55. sync & async functions
+56. fetch intro
+57. fetch text
+58. fetch json
+59. Promises
+60. fetch multiple requests
+61. fetch REST
+
+###### Week 2
+
+62. create a library
+63. Math game
+64. Input limiter
+
+###### Week 3
+
+65. Whack-a-mole game
+66. Create a user class
+67. OOP concepts (readme)
+68. OOP Timers
+69. Quiz game (example)
+
+###### Week 4
