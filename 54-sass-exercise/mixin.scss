@@ -1,0 +1,15 @@
+@mixin container {
+    width:80vw;
+    height: 100vh;
+  }
+  
+  @mixin setFont($fontSize){
+    @if $fontSize == 'small' {
+      font-size: $font-size-text;
+    } @else if $fontSize == 'medium'  {
+      font-size: $font-size-subtitle;
+    } @else if $fontSize == 'large' {
+      font-size: $font-size-title;
+    } 
+  
+  }

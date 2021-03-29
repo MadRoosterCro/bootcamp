@@ -1,0 +1,38 @@
+$color-primary: #b20bff;
+$color-secondary: #00acfc;
+$font-size-title: 24px;
+$font-size-subtitle: 18px;
+$font-size-text: 14px;
+@import "./mixin.scss";
+
+@function setEms($userNumber) {
+  @return $userNumber * $font-size-text;
+}
+
+
+
+.main {
+  .container {
+    @include container;
+  }
+
+  h1 {
+    @include setFont(large);
+  }
+  h2 {
+    @include setFont(medium);
+  }
+  p {
+    @include setFont(small);
+  }
+  ul {
+    li:nth-child(3) {
+      color: $color-primary;
+
+      &:hover {
+        color: $color-secondary;
+        font-size: setEms(1.5);
+      }
+    }
+  }
+}
