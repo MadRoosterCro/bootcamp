@@ -20,20 +20,26 @@ let name = "Dario";
  * create a variable {phrase} which should be a
  * concatenation of {greeting} and {name}
  */
+
 let phrase = (greeting + name);
+
 /**
  * Exercise 4
  *
  * create a variable {price} which should has type number,
  * it should be a float.
  */
+
 let price = 15.99;
+
 /**
  * Exercise 5
  *
  * create a variable {quantity} which should has type number.
  */
+
 let quantity = 10;
+
 /**
  * Exercise 6
  *
