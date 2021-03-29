@@ -3,6 +3,7 @@
  *
  * create a variable {greeting} which should be a string
  */
+
 let greeting = "Hello";
 
 /**
@@ -10,7 +11,9 @@ let greeting = "Hello";
  *
  * create a variable {name} which should be a string
  */
+
 let name = "Dario";
+
 /**
  * Exercise 3
  *
