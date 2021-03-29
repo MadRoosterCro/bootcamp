@@ -6,7 +6,9 @@
  * {userName} can't be reassigned
  *
  */
+
 const userName = "Dario";
+
 /**
  * Exercise 2
  *
