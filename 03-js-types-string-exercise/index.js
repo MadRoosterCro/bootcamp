@@ -5,14 +5,18 @@
  * first - greeting, second - name and return it as one string
  * separated with space(" ")
  */
+
 const greetGenerator = (greeting, name) => greeting + " " + name;
+
 /**
  * Exercise 2
  * 
  * create a function "convertToLowerCase" which takes a capitalized string
  * as a param, convert to lowercase string and return it.
  */
+
 const convertToLowerCase = (UpperCase) => UpperCase.toLowerCase();
+
 /**
  * Exercise 3
  * 
