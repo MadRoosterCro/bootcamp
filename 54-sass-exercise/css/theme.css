@@ -1,0 +1,20 @@
+.main .container {
+    width: 80vw;
+    height: 100vh;
+  }
+  .main h1 {
+    font-size: 24px;
+  }
+  .main h2 {
+    font-size: 18px;
+  }
+  .main p {
+    font-size: 14px;
+  }
+  .main ul li:nth-child(3) {
+    color: #b20bff;
+  }
+  .main ul li:nth-child(3):hover {
+    color: #00acfc;
+    font-size: 21px;
+  }
