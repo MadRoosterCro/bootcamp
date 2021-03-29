@@ -65,6 +65,7 @@ const asyncCookIngredient = ({ name, time }) => {
  * After all the ingredients are cooked,
  * log the message "Soup is ready to serve"
  */
+
 const asyncCookMeal = async (ingredientsToCook) => {
   await ingredientsToCook.forEach(async (ingredient) => {
     await asyncCookIngredient(ingredient);
