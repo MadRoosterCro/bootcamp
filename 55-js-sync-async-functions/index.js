@@ -48,6 +48,13 @@ const syncCookMeal = (ingredientsToCook) => {
  *
  */
 
+const asyncCookIngredient = ( {name, time} ) => {
+  console.log('Start cooking ' + name);
+  setTimeout(() => {
+    console.log(name + ' cooked!');
+  }, time)
+}
+
 /**
  * Exercise 3
  *
