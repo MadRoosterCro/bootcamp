@@ -25,12 +25,14 @@ const syncCookIngredient = ({ name, time }) => {
  * After all the ingredients are cooked,
  * log the message "Soup is ready to serve"
  */
+
 const syncCookMeal = (ingredientsToCook) => {
   ingredientsToCook.forEach((ingredient) => {
     syncCookIngredient(ingredient);
   });
   console.log("Soup is ready to serve");
 };
+
 /**
  * Exercise 2
  *
@@ -45,7 +47,6 @@ const syncCookMeal = (ingredientsToCook) => {
  * the name of the ingredient.
  *
  */
-
 const asyncCookIngredient = ({ name, time }) => {
   console.log("Start cooking " + name);
   setTimeout(() => {
