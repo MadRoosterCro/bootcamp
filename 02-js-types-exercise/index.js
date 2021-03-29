@@ -46,7 +46,9 @@ let quantity = 10;
  * create a variable {total} which should be
  * equal to price multiplied by quantity
  */
+
 let total = (price * quantity);
+
 /**
  * Exercise 7
  *
