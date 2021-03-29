@@ -55,9 +55,11 @@ let total = (price * quantity);
  * create a variables {age1}, {age2}, {age3} which should be
  * integers
  */
+
 let age1 = 20;
 let age2 = 30;
 let age3 = 40;
+
 /**
  * Exercise 8
  *
