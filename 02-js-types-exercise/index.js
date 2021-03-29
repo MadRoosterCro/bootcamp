@@ -66,28 +66,36 @@ let age3 = 40;
  * create a variable {averageAge} which should be
  * the mean of age1, age2 and age3
  */
+
 let averageAge = (age1 + age2 + age3)/3;
+
 /**
  * Exercise 9
  *
  * create a variable {loggedIn} which should be
  * a boolean and equals true.
  */
+
 let loggedIn = true;
+
 /**
  * Exercise 10
  *
  * create a variable {adminUser} which should be
  * a boolean and equals false.
  */
+
 let adminUser = false;
+
 /**
  * Exercise 11
  *
  * create a variable {missingInfo} which should be
  * equal to undefined
  */
+
 let missingInfo = undefined;
+
 /**
  * Exercise 12
  *
