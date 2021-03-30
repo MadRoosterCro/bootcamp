@@ -32,7 +32,6 @@ const syncCookMeal = (ingredientsToCook) => {
   });
   console.log("Soup is ready to serve");
 };
-
 /**
  * Exercise 2
  *
@@ -47,13 +46,13 @@ const syncCookMeal = (ingredientsToCook) => {
  * the name of the ingredient.
  *
  */
-
 const asyncCookIngredient = ({ name, time }) => {
   console.log("Start cooking " + name);
   setTimeout(() => {
     console.log(name + " cooked!");
   }, time);
 };
+
 /**
  * Exercise 3
  *
