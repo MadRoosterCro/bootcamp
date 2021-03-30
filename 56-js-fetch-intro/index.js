@@ -1,6 +1,7 @@
 const form = document.querySelector("form");
 const result = document.querySelector(".result");
 const input = document.querySelector("input");
+
 // ================================
 
 // BEFORE YOU START:

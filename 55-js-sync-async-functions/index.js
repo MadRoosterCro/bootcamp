@@ -54,7 +54,6 @@ const asyncCookIngredient = ({ name, time }) => {
     console.log(name + " cooked!");
   }, time);
 };
-
 /**
  * Exercise 3
  *
@@ -65,7 +64,6 @@ const asyncCookIngredient = ({ name, time }) => {
  * After all the ingredients are cooked,
  * log the message "Soup is ready to serve"
  */
-
 const asyncCookMeal = async (ingredientsToCook) => {
   await ingredientsToCook.forEach(async (ingredient) => {
     await asyncCookIngredient(ingredient);
