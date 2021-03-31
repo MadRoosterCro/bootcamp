@@ -54,7 +54,6 @@ const asyncCookIngredient = ({ name, time }) => {
     console.log(name + " cooked!");
   }, time);
 };
-
 /**
  * Exercise 3
  *
