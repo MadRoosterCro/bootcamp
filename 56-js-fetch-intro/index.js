@@ -23,6 +23,7 @@ const input = document.querySelector("input");
 const getResponse = () => {
     
 }
+
 /**
  * Description of the application:
  *
