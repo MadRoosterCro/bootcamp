@@ -27,6 +27,7 @@ const getResponse = () => {
 /**
  * Description of the application:
  *
+ * 
  * As a user I should be able to:
  * 1. provide URL in input and submit my request
  * 2. if provided URL is a valid API URL, then I should see
