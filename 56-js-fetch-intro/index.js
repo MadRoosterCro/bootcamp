@@ -8,6 +8,7 @@ const input = document.querySelector("input");
 // run `npm install -g serve`
 // then run `serve ./` to serve your index page
 
+
 /**
  * Exercise 1
  *
