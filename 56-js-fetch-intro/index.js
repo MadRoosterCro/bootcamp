@@ -8,7 +8,6 @@ const input = document.querySelector("input");
 // run `npm install -g serve`
 // then run `serve ./` to serve your index page
 
-
 /**
  * Exercise 1
  *
@@ -19,11 +18,9 @@ const input = document.querySelector("input");
  * in {result} element, otherwise render
  * `Request failed with status code: {errorCode}`
  */
-
 const getResponse = () => {
     
 }
-
 /**
  * Description of the application:
  *
