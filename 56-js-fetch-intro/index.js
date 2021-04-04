@@ -18,9 +18,11 @@ const input = document.querySelector("input");
  * in {result} element, otherwise render
  * `Request failed with status code: {errorCode}`
  */
+
 const getResponse = () => {
     
 }
+
 /**
  * Description of the application:
  *
