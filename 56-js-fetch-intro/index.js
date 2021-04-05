@@ -20,7 +20,8 @@ const input = document.querySelector("input");
  */
 
 const getResponse = () => {
-    
+    const result = document.createElement("a");
+    const error = document.createElement("p");
 }
 
 /**
