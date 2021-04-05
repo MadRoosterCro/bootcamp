@@ -25,6 +25,21 @@ const fetchData = async (url = `https://cat-fact.herokuapp.com/facts`) => {
   return facts;
 };
 
+const threeFacts = async () => {
+  const facts = await fetchData(`https://cat-fact.herokuapp.com/facts`);
+  const threeFactsArr = [];
+  while (threeFactsArr.length < 3) {
+    const element = facts[Math.floor(Math.random() * facts.length)];
+    if (!threeFactsArr.includes(element)) {
+      threeFactsArr.push(element);
+    }
+  }
+  threeFactsArr.forEach((fact) => {
+    const newFact = document.createElement(`li`);
+    newFact.innerText = fact;
+    result.appendChild(newFact);
+  });
+};
 /**
  * Description of the application:
  *
