@@ -24,7 +24,7 @@ const getResponse = (url) => {
   fetch(url).then((response) => {
     if (response.ok && input.value !== ``) {
       result.classList.remove(`error`);
-      result.classList.add(`great succes`);
+      result.classList.add(`succes`);
       resultElement.href = url;
       resultElement.target = `_blank`;
       resultElement.innerHTML = `Valid link! ${url}`;
