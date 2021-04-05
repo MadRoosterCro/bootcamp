@@ -16,7 +16,9 @@ const input = document.querySelector("input");
  * a URL as an argument and sends a GET request.
  * When you get a response, return an array of facts.
  */
-
+const fetchData = async (url = `https://cat-fact.herokuapp.com/facts`) => {
+    const data = await fetch(url);
+}
 /**
  * Description of the application:
  *
