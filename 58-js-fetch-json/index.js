@@ -40,6 +40,10 @@ const threeFacts = async () => {
     result.appendChild(newFact);
   });
 };
+
+button.addEventListener(`click`, () => {
+  threeFacts();
+});
 /**
  * Description of the application:
  *
