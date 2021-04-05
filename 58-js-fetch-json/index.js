@@ -16,34 +16,37 @@ const input = document.querySelector("input");
  * a URL as an argument and sends a GET request.
  * When you get a response, return an array of facts.
  */
-const fetchData = async (url = `https://cat-fact.herokuapp.com/facts`) => {
-  const data = await fetch(url).then((response) => response.json);
-  // console.log(data)
+const fetchData = async (url = "https://cat-fact.herokuapp.com/facts") => {
+  const data = await fetch(url).then((response) => response.json());
   const facts = (Array.isArray(data) ? data : data.all).map(
     (fact) => fact.text
   );
+console.log(data);
   return facts;
 };
 
-const threeFacts = async () => {
-  const facts = await fetchData(`https://cat-fact.herokuapp.com/facts`);
-  const threeFactsArr = [];
-  while (threeFactsArr.length < 3) {
-    const element = facts[Math.floor(Math.random() * facts.length)];
-    if (!threeFactsArr.includes(element)) {
-      threeFactsArr.push(element);
+const threeRandomFacts = async () => {
+  const facts = await fetchData("https://cat-fact.herokuapp.com/facts");
+  const factsArr = [];
+
+  while (factsArr.length < 3) {
+    const item = facts[Math.floor(Math.random() * facts.length)];
+    if (!factsArr.includes(item)) {
+      factsArr.push(item);
     }
   }
-  threeFactsArr.forEach((fact) => {
-    const newFact = document.createElement(`li`);
+
+  factsArr.forEach((fact) => {
+    const newFact = document.createElement("li");
     newFact.innerText = fact;
     result.appendChild(newFact);
   });
 };
 
-button.addEventListener(`click`, () => {
-  threeFacts();
+button.addEventListener("click", () => {
+  threeRandomFacts();
 });
+
 /**
  * Description of the application:
  *
