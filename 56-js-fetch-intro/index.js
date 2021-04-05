@@ -43,10 +43,10 @@ input.addEventListener(`focus`, (event) => {
   input.value = ``;
   result.innerText = ``;
 });
-input.addEventListener("blur", (event) => {
-  input.placeholder = "Provide URL...";
+input.addEventListener(`blur`, (event) => {
+  input.placeholder = `Provide URL...`;
 });
-form.addEventListener("submit", (event) => {
+form.addEventListener(`submit`, (event) => {
   event.preventDefault();
   url = input.value;
   getResponse(url);
