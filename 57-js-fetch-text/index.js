@@ -17,24 +17,26 @@ const input = document.querySelector("input");
  * When you receive a response, render the
  * string in {.result} element
  */
-const getResponse = () => {
+
+const getResponse = (url) => {
   fetch(url)
     .then((response) => response.text())
-    .then((fact) => {
-      result.innerText = fact;
+    .then((numberFact) => {
+      result.innerText = numberFact;
     });
 };
-form.addEventListener(`submit`, (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
-  if (input.value !== ``) {
+  if (input.value !== "") {
     getResponse(input.value);
   }
 });
 
-input.addEventListener(`fous`, (event) => {
-  result.innerText = ``;
-  input.value = ``;
+input.addEventListener("focus", (event) => {
+  result.innerText = "";
+  input.value = "";
 });
+
 /**
  * Description of the application:
  *
