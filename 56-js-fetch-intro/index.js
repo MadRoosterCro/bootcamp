@@ -52,6 +52,7 @@ form.addEventListener(`submit`, (event) => {
   getResponse(url);
 });
 
+
 /**
  * Description of the application:
  *
