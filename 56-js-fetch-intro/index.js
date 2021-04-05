@@ -19,20 +19,19 @@ const input = document.querySelector("input");
  * `Request failed with status code: {errorCode}`
  */
 
-const getResponse = () => {
-  const resultPart = document.createElement("a");
-  const errorPart = document.createElement("p");
+const getResponse = (url) => {
+  const resultElement = document.createElement(`a`);
   fetch(url).then((response) => {
-    if (response.ok && input.value !== "") {
-      result.classList.remove("error");
-      result.classList.add("great success");
-      resultPart.href = url;
-      resultPart.target = "_blank";
-      resultPart.innerHTML = `Valid link! ${url}`;
-      result.appendChild(resultPart);
+    if (response.ok && input.value !== ``) {
+      result.classList.remove(`error`);
+      result.classList.add(`great succes`);
+      resultElement.href = url;
+      resultElement.target = `_blank`;
+      resultElement.innerHTML = `Valid link! ${url}`;
+      result.appendChild(resultElement);
     } else {
-      result.classList.add("error");
-      result.classList.remove("great success");
+      result.classList.add(`error`);
+      result.classList.remove(`success`);
       result.innerText = `Request failed with status code: ${response.status}`;
       console.log(result);
     }
@@ -44,8 +43,10 @@ input.addEventListener(`focus`, (event) => {
   input.value = ``;
   result.innerText = ``;
 });
-
-input.addEventListener(`blur`, (event) => {
+input.addEventListener("blur", (event) => {
+  input.placeholder = "Provide URL...";
+});
+form.addEventListener("submit", (event) => {
   event.preventDefault();
   url = input.value;
   getResponse(url);
