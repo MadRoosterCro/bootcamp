@@ -20,9 +20,31 @@ const input = document.querySelector("input");
  */
 
 const getResponse = () => {
-    const result = document.createElement("a");
-    const error = document.createElement("p");
-}
+  const resultPart = document.createElement("a");
+  const errorPart = document.createElement("p");
+  fetch().then((response) => {
+    if (response.ok && input.value !== "") {
+      result.classList.remove("error");
+      result.classList.add("great success");
+      resultPart.href = url;
+      resultPart.target = "_blank";
+      resultPart.innerHTML = `Valid link! ${url}`;
+      result.appendChild(resultPart);
+    } else {
+      result.classList.add("error");
+      result.classList.remove("great success");
+      result.innerText = `Request failed with status code: ${response.status}`;
+      console.log(result);
+    }
+  });
+};
+
+input.addEventListener(`focus`, (event) => {
+  input.placeholder = ``;
+  input.value = ``;
+  result.innerText = ``;
+});
+
 
 /**
  * Description of the application:
