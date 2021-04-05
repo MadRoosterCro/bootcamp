@@ -21,6 +21,14 @@ const ingredients = [
  *
  */
 
+const asyncCookIngredient = (ingredient) => {
+  const promise = new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(ingredient);
+    }, ingredient.time);
+  });
+  return promise;
+};
 
 /**
  * Exercise 2
