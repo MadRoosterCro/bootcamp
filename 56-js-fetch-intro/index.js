@@ -22,7 +22,7 @@ const input = document.querySelector("input");
 const getResponse = () => {
   const resultPart = document.createElement("a");
   const errorPart = document.createElement("p");
-  fetch().then((response) => {
+  fetch(url).then((response) => {
     if (response.ok && input.value !== "") {
       result.classList.remove("error");
       result.classList.add("great success");
@@ -45,6 +45,11 @@ input.addEventListener(`focus`, (event) => {
   result.innerText = ``;
 });
 
+input.addEventListener(`blur`, (event) => {
+  event.preventDefault();
+  url = input.value;
+  getResponse(url);
+});
 
 /**
  * Description of the application:
