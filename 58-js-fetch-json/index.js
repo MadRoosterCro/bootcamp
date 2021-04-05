@@ -17,8 +17,14 @@ const input = document.querySelector("input");
  * When you get a response, return an array of facts.
  */
 const fetchData = async (url = `https://cat-fact.herokuapp.com/facts`) => {
-    const data = await fetch(url);
-}
+  const data = await fetch(url).then((response) => response.json);
+  // console.log(data)
+  const facts = (Array.isArray(data) ? data : data.all).map(
+    (fact) => fact.text
+  );
+  return facts;
+};
+
 /**
  * Description of the application:
  *
