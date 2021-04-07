@@ -20,7 +20,6 @@ const ingredients = [
  * {ingredient} object
  *
  */
-
 const asyncCookIngredient = (ingredient) => {
   const promise = new Promise((resolve) => {
     setTimeout(() => {
