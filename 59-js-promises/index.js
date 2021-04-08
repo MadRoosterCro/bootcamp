@@ -49,7 +49,6 @@ const asyncCookIngredient = (ingredient) => {
  *
  */
 
-
 const asyncCookMeal = (ingredientsToCook) => {
   const cookingProccess = new Promise((resolve) => {
     const thePot = {
