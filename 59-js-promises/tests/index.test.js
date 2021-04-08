@@ -20,7 +20,6 @@ const ingredients = [
  * {ingredient} object
  *
  */
-
 const asyncCookIngredient = (ingredient) => {
   const promise = new Promise((resolve) => {
     setTimeout(() => {
@@ -49,6 +48,48 @@ const asyncCookIngredient = (ingredient) => {
  * }
  *
  */
+
+// const asyncCookMeal = (ingredientsToCook) => {
+//   const cookingProccess = new Promise ((resolve)=> {
+//     const thePot = {
+//       ingredientName: [],
+//       totalTime: 0
+//     }
+//     const maxTime = Math.max(...ingredientsToCook.map((i) => i.time));
+
+//     ingredientsToCook.forEach(ingredient => {
+//       thePot.ingredientName.push(ingredient.name);
+//       thePot.totalTime += ingredient.time;
+//       asyncCookIngredient(ingredient);
+//     })
+//     setTimeout(() => {
+//       resolve(thePot)
+//     }, maxTime);
+//   });
+//   return cookingProccess;
+// }
+
+const asyncCookMeal = (ingredientsToCook) => {
+  const cookingProccess = new Promise((resolve) => {
+    const thePot = {
+      ingredientNames: [],
+      totalTime: 0,
+    };
+    const maxTime = Math.max(...ingredientsToCook.map((i) => i.time));
+
+    ingredientsToCook.forEach((ingredient) => {
+      thePot.ingredientNames.push(ingredient.name);
+      thePot.totalTime += ingredient.time;
+      asyncCookIngredient(ingredient);
+    });
+
+    setTimeout(() => {
+      resolve(thePot);
+    }, maxTime);
+  });
+
+  return cookingProccess;
+};
 
 const ingredientsForTests = [
   { name: "carrot", time: 150 },
