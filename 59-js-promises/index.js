@@ -48,3 +48,7 @@ const asyncCookIngredient = (ingredient) => {
  * }
  *
  */
+
+const asyncCookMeal = (ingredientsToCook) => {
+
+}
