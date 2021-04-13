@@ -4,6 +4,7 @@ const houseURL = "https://anapioficeandfire.com/api/houses/378";
 
 // STORE YOUR SWORN MEMBERS IN {members}
 let members = [];
+
 // =============================
 
 /**
@@ -20,6 +21,8 @@ const fetchData = (url) => {
   const myResult = fetch(url).then((response) => response.json());
   return myResult;
 };
+
+
 
 /**
  * HTML for each member:
