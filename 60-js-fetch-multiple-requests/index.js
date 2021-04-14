@@ -3,10 +3,10 @@ const searchEl = document.querySelector("input");
 const houseURL = "https://anapioficeandfire.com/api/houses/378";
 
 // STORE YOUR SWORN MEMBERS IN {members}
+
 let members = [];
 
 // =============================
-
 /**
  *
  * REQUIREMENTS:
