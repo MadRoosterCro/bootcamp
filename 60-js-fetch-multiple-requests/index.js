@@ -59,6 +59,10 @@ searchedUrls.forEach((url) => {
     resultEl.appendChild(resultList);
   });
 });
+document.querySelector("form").addEventListener("keyup", (event) => {
+  event.preventDefault();
+  getName(searchEl.value);
+});
 
 /**
  * HTML for each member:
