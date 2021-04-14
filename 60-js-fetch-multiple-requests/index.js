@@ -34,7 +34,13 @@ const names = () =>
       });
     });
   });
+names();
 
+const getName = () => {
+  const searchedNames = [];
+  const searchedUrls = [];
+  
+}
 /**
  * HTML for each member:
  * <li>
