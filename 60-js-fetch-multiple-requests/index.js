@@ -22,7 +22,18 @@ const fetchData = (url) => {
   return myResult;
 };
 
-
+const names = () =>
+  fetchData(houseURL).then((results) => {
+    swornMembers = results.swornMembers;
+    swornMembers.forEach((member) => {
+      fetchData(member).then((memberData) => {
+        members.push({ name: `${memberData.name}`, url: `${memberdata.url}` });
+        const resultList = document.createElement(`li`);
+        resultList.innerHTML = `<p class="name">${memberData.name}</p>`;
+        resultEl.appendChild(resultList);
+      });
+    });
+  });
 
 /**
  * HTML for each member:
