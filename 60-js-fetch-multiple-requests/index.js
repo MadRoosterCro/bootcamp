@@ -48,14 +48,18 @@ const getName = (input) => {
   });
 };
 
-resultEl.innerHTML=``;
-searchedUrls.forEach((url) => {fetchData(url).then(data)=> {
-  const resultList =document.createElement(`li`);
-  resultList.innerHTML = `<p class="name">${data.name}</p>
+resultEl.innerHTML = ``;
+searchedUrls.forEach((url) => {
+  fetchData(url).then((data) => {
+    const resultList = document.createElement(`li`);
+    resultList.innerHTML = `<p class="name">${data.name}</p>
   <p class="life">Born: ${data.born} - Died: ${data.died}</p>
   <p class="gender"><strong>Gender: </strong>${data.gender}
-  <p class="culture"><strong>Culture: </strong>${data.culture}</p>`
-} })
+  <p class="culture"><strong>Culture: </strong>${data.culture}</p>`;
+    resultEl.appendChild(resultList);
+  });
+});
+
 /**
  * HTML for each member:
  * <li>
