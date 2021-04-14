@@ -36,11 +36,19 @@ const names = () =>
   });
 names();
 
-const getName = () => {
+const getName = (input) => {
   const searchedNames = [];
   const searchedUrls = [];
-  
-}
+  members.forEach((member) => {
+    const nameValue = member.name.toLowerCase();
+    if (nameValue.includes(input)) {
+      searchedNames.push(member.name);
+      searchedUrls.push(member.url);
+    }
+  });
+};
+
+
 /**
  * HTML for each member:
  * <li>
