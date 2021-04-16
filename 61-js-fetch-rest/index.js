@@ -67,7 +67,20 @@ const patchComment = async (comment, newCommentBody) => {
       "content-type": "application/json",
       Accept: "application/json",
     },
+    body: JSON.stringify({ body: newCommentBody }),
   };
+  const results = await fetch(
+    baseURL + `/comments/` + comment.id,
+    patchComment
+  ).then((response) => {
+    if (!response.ok) {
+      return `Youn can't update this mate`;
+    } else {
+      return response.json();
+    }
+  });
+  console.log(results);
+  return results;
 };
 /**
  * Exercise 4
