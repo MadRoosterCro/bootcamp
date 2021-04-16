@@ -13,14 +13,14 @@ const baseURL = "http://localhost:3000";
 /**
  * Exercise 1
  *
- * create an async function {getComments}, which 
+ * create an async function {getComments}, which
  * gets data from URL and returns the data as JS objects
  *
  * Note: test this function with an URL from your json-server API
  */
 const getComments = async () => {
-
-}
+  return await fetch(baseURL + "/comments").then((response) => response.json);
+};
 /**
  * Exercise 2
  *
