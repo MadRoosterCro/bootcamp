@@ -32,6 +32,19 @@ const getComments = async () => {
  *
  * Don't forget to handle errors.
  */
+const postComment = async (newComment) => {
+  const postComment = {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(newComment),
+  };
+  return await fetch(baseURL + `/comments`, postComment)
+    .then((response) => response.json())
+    .catch((error) => console.error(`You did something wrong mate`));
+};
 
 /**
  * Exercise 3
