@@ -93,7 +93,28 @@ const patchComment = async (comment, newCommentBody) => {
  *
  * Don't forget to handle errors.
  */
-
+const putComment = async (comment) => {
+  const putComment = {
+    method: "PUT",
+    headers: {
+      "content-type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(comment),
+  };
+  const result = await fetch(
+    baseURL + `/comments/` + comment.id,
+    putComment
+  ).then((response) => {
+    if (!response.ok) {
+      return "You can't update that mate!";
+    } else {
+      return response.json();
+    }
+  });
+  console.log(result);
+  return result;
+};
 /**
  * Exercise 5
  *
