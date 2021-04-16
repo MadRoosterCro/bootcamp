@@ -60,7 +60,15 @@ const postComment = async (newComment) => {
  *
  * Don't forget to handle errors.
  */
-
+const patchComment = async (comment, newCommentBody) => {
+  const patchComment = {
+    method: "PATCH",
+    headers: {
+      "content-type": "application/json",
+      Accept: "application/json",
+    },
+  };
+};
 /**
  * Exercise 4
  *
