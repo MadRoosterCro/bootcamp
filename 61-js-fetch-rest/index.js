@@ -18,7 +18,9 @@ const baseURL = "http://localhost:3000";
  *
  * Note: test this function with an URL from your json-server API
  */
+const getComments = async () => {
 
+}
 /**
  * Exercise 2
  *
