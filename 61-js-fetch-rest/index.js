@@ -86,6 +86,7 @@ const patchComment = async (comment, newCommentBody) => {
   console.log(results);
   return results;
 };
+
 /**
  * Exercise 4
  *
