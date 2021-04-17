@@ -34,6 +34,7 @@ const getComments = async () => {
  *
  * Don't forget to handle errors.
  */
+
 const postComment = async (newComment) => {
   const postComment = {
     method: "POST",
