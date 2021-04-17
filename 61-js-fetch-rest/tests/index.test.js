@@ -66,7 +66,28 @@ const postComment = async (newComment) => {
  *
  * Don't forget to handle errors.
  */
-
+const patchComment = async (comment, newCommentBody) => {
+  const patchComment = {
+    method: "PATCH",
+    headers: {
+      "content-type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({ body: newCommentBody }),
+  };
+  const results = await fetch(
+    baseURL + `/comments/` + comment.id,
+    patchComment
+  ).then((response) => {
+    if (!response.ok) {
+      return `Youn can't update this mate`;
+    } else {
+      return response.json();
+    }
+  });
+  console.log(results);
+  return results;
+};
 /**
  * Exercise 4
  *
@@ -78,7 +99,28 @@ const postComment = async (newComment) => {
  *
  * Don't forget to handle errors.
  */
-
+const putComment = async (comment) => {
+  const putComment = {
+    method: "PUT",
+    headers: {
+      "content-type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify(comment),
+  };
+  const result = await fetch(
+    baseURL + `/comments/` + comment.id,
+    putComment
+  ).then((response) => {
+    if (!response.ok) {
+      return "You can't update that mate!";
+    } else {
+      return response.json();
+    }
+  });
+  console.log(result);
+  return result;
+};
 /**
  * Exercise 5
  *
@@ -89,6 +131,22 @@ const postComment = async (newComment) => {
  *
  * Don't forget to handle errors.
  */
+const deleteComment = async (comment) => {
+  const deleteComment = {
+    method: "DELETE",
+  };
+  const result =
+    (await fetch(baseURL + `/comments/` + comment.id, deleteComment)) /
+    then((response) => {
+      if (!response.ok) {
+        return "You can't delete that mate";
+      } else {
+        return "Comment was deleted successfully";
+      }
+    });
+  console.log(result);
+  return result;
+};
 
 describe("HTTP requests", () => {
   // Exercise 1
