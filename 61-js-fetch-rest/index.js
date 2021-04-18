@@ -120,6 +120,7 @@ const putComment = async (comment) => {
   console.log(result);
   return result;
 };
+
 /**
  * Exercise 5
  *
