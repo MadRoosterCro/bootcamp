@@ -130,6 +130,7 @@ const putComment = async (comment) => {
  *
  * Don't forget to handle errors.
  */
+
 const deleteComment = async (comment) => {
   const deleteComment = {
     method: "DELETE",
