@@ -98,6 +98,7 @@ const patchComment = async (comment, newCommentBody) => {
  *
  * Don't forget to handle errors.
  */
+
 const putComment = async (comment) => {
   const putComment = {
     method: "PUT",
