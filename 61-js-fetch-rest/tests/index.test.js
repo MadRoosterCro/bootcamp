@@ -6,6 +6,7 @@ const fetch = require("node-fetch-polyfill");
 document.body.innerHTML = ``;
 // set base URL to your json server
 // Ex: http://localhost:3000
+
 const baseURL = "http://localhost:3000";
 /**
  * BEFORE YOU START:
@@ -24,9 +25,14 @@ const baseURL = "http://localhost:3000";
  *
  * Note: test this function with an URL from your json-server API
  */
+
 const getComments = async () => {
-  return await fetch(baseURL + "/comments").then((response) => response.json);
+  const newPromise = await fetch(`${baseURL}/comments`).then((response) =>
+    response.json()
+  );
+  return newPromise;
 };
+
 /**
  * Exercise 2
  *
@@ -38,6 +44,7 @@ const getComments = async () => {
  *
  * Don't forget to handle errors.
  */
+
 const postComment = async (newComment) => {
   const postComment = {
     method: "POST",
@@ -66,6 +73,7 @@ const postComment = async (newComment) => {
  *
  * Don't forget to handle errors.
  */
+
 const patchComment = async (comment, newCommentBody) => {
   const patchComment = {
     method: "PATCH",
@@ -88,6 +96,7 @@ const patchComment = async (comment, newCommentBody) => {
   console.log(results);
   return results;
 };
+
 /**
  * Exercise 4
  *
@@ -99,6 +108,7 @@ const patchComment = async (comment, newCommentBody) => {
  *
  * Don't forget to handle errors.
  */
+
 const putComment = async (comment) => {
   const putComment = {
     method: "PUT",
@@ -121,6 +131,7 @@ const putComment = async (comment) => {
   console.log(result);
   return result;
 };
+
 /**
  * Exercise 5
  *
@@ -131,6 +142,7 @@ const putComment = async (comment) => {
  *
  * Don't forget to handle errors.
  */
+
 const deleteComment = async (comment) => {
   const deleteComment = {
     method: "DELETE",

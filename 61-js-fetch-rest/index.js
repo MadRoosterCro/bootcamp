@@ -21,7 +21,10 @@ const baseURL = "http://localhost:3000";
  */
 
 const getComments = async () => {
-  return await fetch(baseURL + "/comments").then((response) => response.json);
+  const newPromise = await fetch(`${baseURL}/comments`).then((response) =>
+    response.json()
+  );
+  return newPromise;
 };
 
 /**
