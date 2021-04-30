@@ -27,12 +27,18 @@ const addElement = (element, destination) => {
 };
 
 const getElement = (selector, all) => {
-    if(all) {
-        return document.querySelectorAll(selector);
-    } else {
-        return document.querySelector(selector);
-    }
-}
+  if (all) {
+    return document.querySelectorAll(selector);
+  } else {
+    return document.querySelector(selector);
+  }
+};
 const removeElement = (selector, all) => {
-    
-}
+  if (all) {
+    document.querySelectorAll(selector).forEach((selected) => {
+      selected.parentNode.removeChild(selected);
+    });
+  } else {
+    document.querySelector(selector).remove();
+  }
+};
