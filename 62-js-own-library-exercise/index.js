@@ -33,3 +33,6 @@ const getElement = (selector, all) => {
         return document.querySelector(selector);
     }
 }
+const removeElement = (selector, all) => {
+    
+}
