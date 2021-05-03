@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap");
+* {
+  font-family: "Antonio", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.gameBox {
+  position: relative;
+}
+.gameBox .selectionBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gameBox .selectionBox .buttons button {
+  background-color: #b4d0ff;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
