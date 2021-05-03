@@ -30,6 +30,7 @@ git push
 [Module 1 - CLI APP](https://github.com/CoderscdInHoods/cli-project-london-300121)
 [Module 2 - Ecommerce website](https://github.com/CodersInHoods/e-commerce-project-london-300121)
 [Module 3 - Twitter App](https://github.com/CodersInHoods/twitter-project-london-300121)
+[Module 4 Project - StockMarket](https://github.com/CodersInHoods/stock-trader-london-300121)
 
 ## Slides
 
@@ -57,6 +58,14 @@ git push
 - [M3W3L2 - OOP and TypeScript](https://docs.google.com/presentation/d/1eBlTCIaY-M6w5g42dJ1oTKJPZmrJLUHkn4lxaQ-wFic/edit?usp=sharing)
 - [M3W4L1 - Testing in JS](https://docs.google.com/presentation/d/1i_OSOdEy4yw6U5Se7f09EfFXHZzWr_NYq-n2pc5dq5s/edit?usp=sharing)
 - [M3W4L2 - JS Code along](https://docs.google.com/presentation/d/1NCwDuwKlhQeyLdyzs8RxE29bljEsXmAIG2DVNlz2_eE/edit?usp=sharing)
+- [M4L1 - Event loop, Global, Process, Filesystem, Path](https://docs.google.com/presentation/d/1EOs2NC83JCnkcXndhCim60SK2C-RcG-CaNuHSu9UQ6M/edit?usp=sharing)
+- [M4L2 - Express](https://docs.google.com/presentation/d/1pXv_Gt-KowAFL8W4o696_BP8M4cnEVMH-jZy3_c7Y2k/edit?usp=sharing)
+- [M4L3 - MySql](https://docs.google.com/presentation/d/1snZBNBUxa79FLENKbsa_R3WxVluIgZtBBne0UDtwp5o/edit?usp=sharing)
+- [M4L4 - MongoDB](https://docs.google.com/presentation/d/1bkTG7Ihr3wz7tn3-OsTUTRZq5ihdc9XNoq_xBVmTF5o/edit?usp=sharing)
+- [M4L5 - Authentication](https://docs.google.com/presentation/d/1r65E-8dCgh499wRaLwKxDNVX4rbp0slanrpz7M8HtBc/edit?usp=sharing)
+- [M4L6 - Server Side rendering](https://docs.google.com/presentation/d/17cgiWTrW8W5dhJdHcW8LdTVsqcTDBp5bMfDbfuy7awA/edit?usp=sharing)
+- [M4L7 - Serverless](https://docs.google.com/presentation/d/1VaSyKXB-i9Ck9c6JHkBBPOPotDea-0qta3SUgdiIWQI/edit?usp=sharing)
+- [M4L8 - Socket.io](https://docs.google.com/presentation/d/1M7dNZdE05iHt6ObjBcF2WsLH8XJue4bO497pLgONac4/edit?usp=sharing)
 
 ## Exercises/Examples/Read
 
@@ -169,3 +178,32 @@ git push
 69. Quiz game (example)
 
 ###### Week 4
+
+##### Module 4
+
+###### Week 1
+
+70. File system
+71. HTTP server
+72. Node modules
+73. Express API Calculator
+74. REST API server
+75. Express image uploader
+
+###### Week 2
+
+76. MySql DB exercise
+77. Sequelize DB exercise
+78. import csv file to database
+79. mongodb exercise
+
+###### Week 3
+
+80. auth hashing exercise
+81. JWT exercise
+82. Server side rendering
+
+###### Week 4
+
+83. Serverless Firebase exercise
+84. create a chat app
