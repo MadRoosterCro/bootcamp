@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math game</title>
+</head>
+<body>
+    <h1>Math Game</h1>
+    <div class="gameBox">
+        <div class="selectionBox">
+            Please select how many questions you want to answer:
+            <div class="buttons">
+                <button value="10">10</button>
+                <button value="15">15</button>
+                <button value="20">20</button>
+            </div>
+        </div>
+        <div class="hidden questions">
+            <div class="values">1+2</div>
+            <form action="submit" class="submit">
+                <input type="float"/>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="hidden popup">
+        <span class="popuptext" id="popup"></span>
+        <button class="reset hidden" type="Submit" >Restart</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
