@@ -27,10 +27,19 @@ git push
 
 ## Project repos
 
+<<<<<<< HEAD
 [Module 1 - CLI APP](https://github.com/CoderscdInHoods/cli-project-london-300121)
+=======
+[Module 1 - CLI APP](https://github.com/CodersInHoods/cli-project-london-300121)
+
+>>>>>>> 0d2c867b86479112848e4a0714198eac8f0ff68c
 [Module 2 - Ecommerce website](https://github.com/CodersInHoods/e-commerce-project-london-300121)
+
 [Module 3 - Twitter App](https://github.com/CodersInHoods/twitter-project-london-300121)
-[Module 4 Project - StockMarket](https://github.com/CodersInHoods/stock-trader-london-300121)
+
+[Module 4 - StockMarket](https://github.com/CodersInHoods/stock-trader-london-300121)
+
+[Module 5 - Recipe book](https://github.com/CodersInHoods/recipes-book-london-300121)
 
 ## Slides
 
@@ -58,14 +67,22 @@ git push
 - [M3W3L2 - OOP and TypeScript](https://docs.google.com/presentation/d/1eBlTCIaY-M6w5g42dJ1oTKJPZmrJLUHkn4lxaQ-wFic/edit?usp=sharing)
 - [M3W4L1 - Testing in JS](https://docs.google.com/presentation/d/1i_OSOdEy4yw6U5Se7f09EfFXHZzWr_NYq-n2pc5dq5s/edit?usp=sharing)
 - [M3W4L2 - JS Code along](https://docs.google.com/presentation/d/1NCwDuwKlhQeyLdyzs8RxE29bljEsXmAIG2DVNlz2_eE/edit?usp=sharing)
-- [M4L1 - Event loop, Global, Process, Filesystem, Path](https://docs.google.com/presentation/d/1EOs2NC83JCnkcXndhCim60SK2C-RcG-CaNuHSu9UQ6M/edit?usp=sharing)
-- [M4L2 - Express](https://docs.google.com/presentation/d/1pXv_Gt-KowAFL8W4o696_BP8M4cnEVMH-jZy3_c7Y2k/edit?usp=sharing)
-- [M4L3 - MySql](https://docs.google.com/presentation/d/1snZBNBUxa79FLENKbsa_R3WxVluIgZtBBne0UDtwp5o/edit?usp=sharing)
-- [M4L4 - MongoDB](https://docs.google.com/presentation/d/1bkTG7Ihr3wz7tn3-OsTUTRZq5ihdc9XNoq_xBVmTF5o/edit?usp=sharing)
-- [M4L5 - Authentication](https://docs.google.com/presentation/d/1r65E-8dCgh499wRaLwKxDNVX4rbp0slanrpz7M8HtBc/edit?usp=sharing)
-- [M4L6 - Server Side rendering](https://docs.google.com/presentation/d/17cgiWTrW8W5dhJdHcW8LdTVsqcTDBp5bMfDbfuy7awA/edit?usp=sharing)
-- [M4L7 - Serverless](https://docs.google.com/presentation/d/1VaSyKXB-i9Ck9c6JHkBBPOPotDea-0qta3SUgdiIWQI/edit?usp=sharing)
-- [M4L8 - Socket.io](https://docs.google.com/presentation/d/1M7dNZdE05iHt6ObjBcF2WsLH8XJue4bO497pLgONac4/edit?usp=sharing)
+- [M4W1L1 - Event loop, Global, Process, Filesystem, Path](https://docs.google.com/presentation/d/1EOs2NC83JCnkcXndhCim60SK2C-RcG-CaNuHSu9UQ6M/edit?usp=sharing)
+- [M4W1L2 - Express](https://docs.google.com/presentation/d/1pXv_Gt-KowAFL8W4o696_BP8M4cnEVMH-jZy3_c7Y2k/edit?usp=sharing)
+- [M4W2L3 - MySql](https://docs.google.com/presentation/d/1snZBNBUxa79FLENKbsa_R3WxVluIgZtBBne0UDtwp5o/edit?usp=sharing)
+- [M4W2L4 - MongoDB](https://docs.google.com/presentation/d/1bkTG7Ihr3wz7tn3-OsTUTRZq5ihdc9XNoq_xBVmTF5o/edit?usp=sharing)
+- [M4W3L5 - Authentication](https://docs.google.com/presentation/d/1r65E-8dCgh499wRaLwKxDNVX4rbp0slanrpz7M8HtBc/edit?usp=sharing)
+- [M4W3L6 - Server Side rendering](https://docs.google.com/presentation/d/17cgiWTrW8W5dhJdHcW8LdTVsqcTDBp5bMfDbfuy7awA/edit?usp=sharing)
+- [M4W4L7 - Serverless](https://docs.google.com/presentation/d/1VaSyKXB-i9Ck9c6JHkBBPOPotDea-0qta3SUgdiIWQI/edit?usp=sharing)
+- [M4W4L8 - Socket.io](https://docs.google.com/presentation/d/1M7dNZdE05iHt6ObjBcF2WsLH8XJue4bO497pLgONac4/edit?usp=sharing)
+- [M5W1L1 - JS Frameworks](https://docs.google.com/presentation/d/1UqyBirzdhAyi21RD3z4gNkwd-D9WS1PuvgoDoTYKXaw/edit?usp=sharing)
+- [M5W1L2 - React State](https://docs.google.com/presentation/d/1pdXYaNj4z1IygN4G-ENtMnMHjbwwJSA_gx97PcQpArM/edit?usp=sharing)
+- [M5W2L3 - React props](https://docs.google.com/presentation/d/1IuKVaWnCrQgeBcn0ImyYZxSMsiXitPCQhN4JQr-mfYI/edit?usp=sharing)
+- [M5W2L4 - State&Props Code along](https://docs.google.com/presentation/d/1dacyYVsjl4Tc0VF5dvCBpiHd3RSVFn4tFoMa9vU32gU/edit?usp=sharing)
+- [M5W3L5 - React hooks](https://docs.google.com/presentation/d/1s_psfndFNw1IgVI1kSnkLu_Zel3OgYLpyZAzbYOggsw/edit?usp=sharing)
+- [M5W3L6 - React Router](https://docs.google.com/presentation/d/1aFSSIHIoAtW3E5h7JH4xfC_2ntt-VBU7mKdp6gb3DRM/edit?usp=sharing)
+- [M5W4L7 - Redux](https://docs.google.com/presentation/d/1YeeMSYMNFA-8xJ1BBNx3Knqa5rgHFKRh9PLCkkFqRvg/edit?usp=sharing)
+- [M5W4L8 - React redux](https://docs.google.com/presentation/d/1cqotCJYZBrIZhGn-e9WvDBlH_ZTljj3bMnPJDRdcT-g/edit?usp=sharing)
 
 ## Exercises/Examples/Read
 
@@ -207,3 +224,30 @@ git push
 
 83. Serverless Firebase exercise
 84. create a chat app
+
+##### Module 5
+
+###### Week 1
+
+85. React components
+86. React components list
+87. React counters
+88. React user list
+89. React form inputs
+90. React filtering
+91. React filtering advance
+
+###### Week 2
+
+92. React props
+93. Teams with props
+94. Todo app (example)
+95. Cart with props
+
+###### Week 3
+
+96. Bank app
+
+###### Week 4
+
+97. Kitten app
